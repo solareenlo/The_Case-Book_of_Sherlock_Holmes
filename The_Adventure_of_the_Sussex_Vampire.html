@@ -1,0 +1,769 @@
+<!DOCTYPE HTML>
+<html lang="ja" class="sidebar-visible no-js light">
+    <head>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-200.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-300.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-500.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-600.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-700.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-900.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-regular.woff2" crossorigin>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>The Adventure of the Sussex Vampire - The Casebook of Sherlock Holmes</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+        <link rel="stylesheet" href="fonts/font.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="src/theme/solarized-light-hljs.css">
+        <link rel="stylesheet" href="src/theme/solarized-dark-hljs.css">
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">Home</a></li><li class="chapter-item expanded "><a href="The_Adventure_of_the_Mazarin_Stone.html"><strong aria-hidden="true">1.</strong> The Adventure of the Mazarin Stone</a></li><li class="chapter-item expanded "><a href="The_Problem_of_Thor_Bridge.html"><strong aria-hidden="true">2.</strong> The Problem of Thor Bridge</a></li><li class="chapter-item expanded "><a href="The_Adventure_of_the_Creeping_Man.html"><strong aria-hidden="true">3.</strong> The Adventure of the Creeping Man</a></li><li class="chapter-item expanded "><a href="The_Adventure_of_the_Sussex_Vampire.html" class="active"><strong aria-hidden="true">4.</strong> The Adventure of the Sussex Vampire</a></li><li class="chapter-item expanded "><a href="The_Adventure_of_the_Three_Garridebs.html"><strong aria-hidden="true">5.</strong> The Adventure of the Three Garridebs</a></li><li class="chapter-item expanded "><a href="The_Adventure_of_the_Illustrious_Client.html"><strong aria-hidden="true">6.</strong> The Adventure of the Illustrious Client</a></li><li class="chapter-item expanded "><a href="The_Adventure_of_the_Three_Gables.html"><strong aria-hidden="true">7.</strong> The Adventure of the Three Gables</a></li><li class="chapter-item expanded "><a href="The_Adventure_of_the_Blanched_Soldier.html"><strong aria-hidden="true">8.</strong> The Adventure of the Blanched Soldier</a></li><li class="chapter-item expanded "><a href="The_Adventure_of_the_Lions_Mane.html"><strong aria-hidden="true">9.</strong> The Adventure of the Lion's Mane</a></li><li class="chapter-item expanded "><a href="The_Adventure_of_the_Retired_Colourman.html"><strong aria-hidden="true">10.</strong> The Adventure of the Retired Colourman</a></li><li class="chapter-item expanded "><a href="The_Adventure_of_the_Veiled_Lodger.html"><strong aria-hidden="true">11.</strong> The Adventure of the Veiled Lodger</a></li><li class="chapter-item expanded "><a href="The_Adventure_of_Shoscombe_Old_Place.html"><strong aria-hidden="true">12.</strong> The Adventure of Shoscombe Old Place</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="solarized-light">Solarized Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="solarized-dark">Solarized Dark</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">The Casebook of Sherlock Holmes</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/solareenlo/The_Casebook_of_Sherlock_Holmes" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/solareenlo/The_Casebook_of_Sherlock_Holmes/edit/main/src/The_Adventure_of_the_Sussex_Vampire.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="4-the-adventure-of-the-sussex-vampire"><a class="header" href="#4-the-adventure-of-the-sussex-vampire">4. The Adventure of the Sussex Vampire</a></h1>
+<p>Holmes had read carefully a note which the last post had brought him.
+Then, with the dry chuckle which was his nearest approach to a laugh,
+he tossed it over to me.</p>
+<p>&quot;For a mixture of the modern and the mediæval, of the practical and of
+the wildly fanciful, I think this is surely the limit,&quot; said he.  &quot;What
+do you make of it, Watson?&quot;</p>
+<p>I read as follows:</p>
+<p>46, OLD JEWRY,
+<em>Nov.</em> 19_th._</p>
+<p><em>Re</em> Vampires.</p>
+<p>SIR,--</p>
+<p>Our client, Mr. Robert Ferguson, of Ferguson and Muirhead, tea brokers,
+of Mincing Lane, has made some inquiry from us in a communication of
+even date concerning vampires.  As our firm specializes entirely upon
+the assessment of machinery the matter hardly comes within our purview,
+and we have therefore recommended Mr. Ferguson to call upon you and lay
+the matter before you.  We have not forgotten your successful action in
+the case of Matilda Briggs.</p>
+<p>We are, Sir, Faithfully yours,
+MORRISON, MORRISON, AND DODD.
+per E. J. C.</p>
+<p>&quot;Matilda Briggs was not the name of a young woman, Watson,&quot; said
+Holmes, in a reminiscent voice.  &quot;It was a ship which is associated
+with the giant rat of Sumatra, a story for which the world is not yet
+prepared.  But what do we know about vampires?  Does it come within our
+purview either?  Anything is better than stagnation, but really we seem
+to have been switched on to a Grimm's fairy tale.  Make a long arm,
+Watson, and see what V has to say.&quot;</p>
+<p>I leaned back and took down the great index volume to which he
+referred.  Holmes balanced it on his knee and his eyes moved slowly and
+lovingly over the record of old cases, mixed with the accumulated
+information of a lifetime.</p>
+<p>&quot;Voyage of the Gloria Scott,&quot; he read.  &quot;That was a bad business.  I
+have some recollection that you made a record of it, Watson, though I
+was unable to congratulate you upon the result.  Victor Lynch, the
+forger.  Venomous lizard or gila.  Remarkable case, that!  Vittoria,
+the circus belle.  Vanderbilt and the Yeggman.  Vipers.  Vigor, the
+Hammersmith wonder.  Hullo!  Hullo!  Good old index.  You can't beat
+it.  Listen to this, Watson.  Vampirism in Hungary.  And again,
+Vampires in Transylvania.&quot;  He turned over the pages with eagerness,
+but after a short intent perusal he threw down the great book with a
+snarl of disappointment.</p>
+<p>&quot;Rubbish, Watson, rubbish!  What have we to do with walking corpses who
+can only be held in their grave by stakes driven through their hearts?
+It's pure lunacy.&quot;</p>
+<p>&quot;But surely,&quot; said I, &quot;the vampire was not necessarily a dead man?  A
+living person might have the habit.  I have read, for example, of the
+old sucking the blood of the young in order to retain their youth.&quot;</p>
+<p>&quot;You are right, Watson.  It mentions the legend in one of these
+references.  But are we to give serious attention to such things?  This
+Agency stands flat-footed upon the ground, and there it must remain.
+The world is big enough for us.  No ghosts need apply.  I fear that we
+cannot take Mr. Robert Ferguson very seriously.  Possibly this note may
+be from him, and may throw some light upon what is worrying him.&quot;</p>
+<p>He took up a second letter which had lain unnoticed upon the table
+whilst he had been absorbed with the first.  This he began to read with
+a smile of amusement upon his face which gradually faded away into an
+expression of intense interest and concentration.  When he had finished
+he sat for some little time lost in thought with the letter dangling
+from his fingers.  Finally, with a start, he aroused himself from his
+reverie.</p>
+<p>&quot;Cheeseman's, Lamberley.  Where is Lamberley, Watson?&quot;</p>
+<p>&quot;It is in Sussex, south of Horsham.&quot;</p>
+<p>&quot;Not very far, eh?  And Cheeseman's?&quot;</p>
+<p>&quot;I know that country, Holmes.  It is full of old houses which are named
+after the men who built them centuries ago.  You get Odley's and
+Harvey's and Carriton's--the folk are forgotten but their names live in
+their houses.&quot;</p>
+<p>&quot;Precisely,&quot; said Holmes coldly.  It was one of the peculiarities of
+his proud, self-contained nature that, though he docketed any fresh
+information very quickly and accurately in his brain, he seldom made
+any acknowledgment to the giver.  &quot;I rather fancy we shall know a good
+deal more about Cheeseman's, Lamberley, before we are through.  The
+letter is, as I had hoped, from Robert Ferguson.  By the way, he claims
+acquaintance with you.&quot;</p>
+<p>&quot;With me!&quot;</p>
+<p>&quot;You had better read it.&quot;</p>
+<p>He handed the letter across.  It was headed with the address quoted.</p>
+<p>DEAR MR. HOLMES, (it said)--I have been recommended to you by my
+lawyers, but indeed the matter is so extraordinarily delicate that it
+is most difficult to discuss.  It concerns a friend for whom I am
+acting.  This gentleman married some five years ago a Peruvian lady,
+the daughter of a Peruvian merchant, whom he had met in connection with
+the importation of nitrates.  The lady was very beautiful, but the fact
+of her foreign birth and of her alien religion always caused a
+separation of interests and of feelings between husband and wife, so
+that after a time his love may have cooled towards her and he may have
+come to regard their union as a mistake.  He felt there were sides of
+her character which he could never explore or understand.  This was the
+more painful as she was as loving a wife as a man could have--to all
+appearance absolutely devoted.</p>
+<p>Now for the point which I will make more plain when we meet.  Indeed,
+this note is merely to give you a general idea of the situation and to
+ascertain whether you would care to interest yourself in the matter.
+The lady began to show some curious traits quite alien to her
+ordinarily sweet and gentle disposition.  The gentleman had been
+married twice and he had one son by the first wife.  This boy was now
+fifteen, a very charming and affectionate youth, though unhappily
+injured through an accident in childhood.  Twice the wife was caught in
+the act of assaulting this poor lad in the most unprovoked way.  Once
+she struck him with a stick and left a great weal on his arm.</p>
+<p>This was a small matter, however, compared with her conduct to her own
+child, a dear boy just under one year of age.  On one occasion about a
+month ago this child had been left by its nurse for a few minutes.  A
+loud cry from the baby, as of pain, called the nurse back.  As she ran
+into the room she saw her employer, the lady, leaning over the baby and
+apparently biting his neck.  There was a small wound in the neck, from
+which a stream of blood had escaped.  The nurse was so horrified that
+she wished to call the husband, but the lady implored her not to do so,
+and actually gave her five pounds as a price for her silence.  No
+explanation was ever given, and for the moment the matter was passed
+over.</p>
+<p>It left, however, a terrible impression upon the nurse's mind, and from
+that time she began to watch her mistress closely, and to keep a closer
+guard upon the baby, whom she tenderly loved.  It seemed to her that
+even as she watched the mother, so the mother watched her, and that
+every time she was compelled to leave the baby alone the mother was
+waiting to get at it.  Day and night the nurse covered the child, and
+day and night the silent, watchful mother seemed to be lying in wait as
+a wolf waits for a lamb.  It must read most incredible to you, and yet
+I beg you to take it seriously, for a child's life and a man's sanity
+may depend upon it.</p>
+<p>At last there came one dreadful day when the facts could no longer be
+concealed from the husband.  The nurse's nerve had given way; she could
+stand the strain no longer, and she made a clean breast of it all to
+the man.  To him it seemed as wild a tale as it may now seem to you.
+He knew his wife to be a loving wife, and, save for the assaults upon
+her stepson, a loving mother.  Why, then, should she wound her own dear
+little baby?  He told the nurse that she was dreaming, that her
+suspicions were those of a lunatic, and that such libels upon her
+mistress were not to be tolerated.  Whilst they were talking, a sudden
+cry of pain was heard.  Nurse and master rushed together to the
+nursery.  Imagine his feelings, Mr. Holmes, as he saw his wife rise
+from a kneeling position beside the cot, and saw blood upon the child's
+exposed neck and upon the sheet.  With a cry of horror, he turned his
+wife's face to the light and saw blood all round her lips.  It was
+she--she beyond all question--who had drunk the poor baby's blood.</p>
+<p>So the matter stands.  She is now confined to her room.  There has been
+no explanation.  The husband is half demented.  He knows, and I know,
+little of Vampirism beyond the name.  We had thought it was some wild
+tale of foreign parts.  And yet here in the very heart of the English
+Sussex--well, all this can be discussed with you in the morning.  Will
+you see me?  Will you use your great powers in aiding a distracted man?
+If so, kindly wire to Ferguson, Cheeseman's, Lamberley, and I will be
+at your rooms by ten o'clock.</p>
+<p>Yours faithfully,
+ROBERT FERGUSON.</p>
+<p>PS.--I believe your friend Watson played Rugby for Blackheath when I
+was three-quarter for Richmond.  It is the only personal introduction
+which I can give.</p>
+<p>&quot;Of course I remember him,&quot; said I, as I laid down the letter.  &quot;Big
+Bob Ferguson, the finest three-quarter Richmond ever had.  He was
+always a good-natured chap.  It's like him to be so concerned over a
+friend's case.&quot;</p>
+<p>Holmes looked at me thoughtfully and shook his head.</p>
+<p>&quot;I never get your limits, Watson,&quot; said he.  &quot;There are unexplored
+possibilities about you.  Take a wire down, like a good fellow.  'Will
+examine your case with pleasure.'&quot;</p>
+<p>&quot;<em>Your</em> case!&quot;</p>
+<p>&quot;We must not let him think that this Agency is a home for the
+weak-minded.  Of course it is his case.  Send him that wire and let the
+matter rest till morning.&quot;</p>
+<p>Promptly at ten o'clock next morning Ferguson strode into our room.  I
+had remembered him as a long, slab-sided man with loose limbs and a
+fine turn of speed, which had carried him round many an opposing back.
+There is surely nothing in life more painful than to meet the wreck of
+a fine athlete whom one has known in his prime.  His great frame had
+fallen in, his flaxen hair was scanty, and his shoulders were bowed.  I
+fear that I roused corresponding emotions in him.</p>
+<p>&quot;Hullo, Watson,&quot; said he, and his voice was still deep and hearty.
+&quot;You don't look quite the man you did when I threw you over the ropes
+into the crowd at the Old Deer Park.  I expect I have changed a bit
+also.  But it's this last day or two that has aged me.  I see by your
+telegram, Mr. Holmes, that it is no use my pretending to be anyone's
+deputy.&quot;</p>
+<p>&quot;It is simpler to deal direct,&quot; said Holmes.</p>
+<p>&quot;Of course it is.  But you can imagine how difficult it is when you are
+speaking of the one woman whom you are bound to protect and help.  What
+can I do?  How am I to go to the police with such a story?  And yet the
+kiddies have got to be protected.  Is it madness, Mr. Holmes?  Is it
+something in the blood?  Have you any similar case in your experience?
+For God's sake, give me some advice, for I am at my wits' end.&quot;</p>
+<p>&quot;Very naturally, Mr. Ferguson.  Now sit here and pull yourself together
+and give me a few clear answers.  I can assure you that I am very far
+from being at my wits' end, and that I am confident we shall find some
+solution.  First of all, tell me what steps you have taken.  Is your
+wife still near the children?&quot;</p>
+<p>&quot;We had a dreadful scene.  She is a most loving woman, Mr. Holmes.  If
+ever a woman loved a man with all her heart and soul, she loves me.
+She was cut to the heart that I should have discovered this horrible,
+this incredible, secret.  She would not even speak.  She gave no answer
+to my reproaches, save to gaze at me with a sort of wild, despairing
+look in her eyes.  Then she rushed to her room and locked herself in.
+Since then she has refused to see me.  She has a maid who was with her
+before her marriage, Dolores by name--a friend rather than a servant.
+She takes her food to her.&quot;</p>
+<p>&quot;Then the child is in no immediate danger?&quot;</p>
+<p>&quot;Mrs. Mason, the nurse, has sworn that she will not leave it night or
+day.  I can absolutely trust her.  I am more uneasy about poor little
+Jack, for, as I told you in my note, he has twice been assaulted by
+her.&quot;</p>
+<p>&quot;But never wounded?&quot;</p>
+<p>&quot;No; she struck him savagely.  It is the more terrible as he is a poor
+little inoffensive cripple.&quot;  Ferguson's gaunt features softened as he
+spoke of his boy.  &quot;You would think that the dear lad's condition would
+soften anyone's heart.  A fall in childhood and a twisted spine, Mr.
+Holmes.  But the dearest, most loving heart within.&quot;</p>
+<p>Holmes had picked up the letter of yesterday and was reading it over.
+&quot;What other inmates are there in your house, Mr. Ferguson?&quot;</p>
+<p>&quot;Two servants who have not been long with us.  One stable-hand,
+Michael, who sleeps in the house.  My wife, myself, my boy Jack, baby,
+Dolores, and Mrs. Mason.  That is all.&quot;</p>
+<p>&quot;I gather that you did not know your wife well at the time of your
+marriage?&quot;</p>
+<p>&quot;I had only known her a few weeks.&quot;</p>
+<p>&quot;How long had this maid Dolores been with her?&quot;</p>
+<p>&quot;Some years.&quot;</p>
+<p>&quot;Then your wife's character would really be better known by Dolores
+than by you?&quot;</p>
+<p>&quot;Yes, you may say so.&quot;</p>
+<p>Holmes made a note.</p>
+<p>&quot;I fancy,&quot; said he, &quot;that I may be of more use at Lamberley than here.
+It is eminently a case for personal investigation.  If the lady remains
+in her room, our presence could not annoy or inconvenience her.  Of
+course, we would stay at the inn.&quot;</p>
+<p>Ferguson gave a gesture of relief.</p>
+<p>&quot;It is what I hoped, Mr. Holmes.  There is an excellent train at two
+from Victoria, if you could come.&quot;</p>
+<p>&quot;Of course we could come.  There is a lull at present.  I can give you
+my undivided energies.  Watson, of course, comes with us.  But there
+are one or two points upon which I wish to be very sure before I start.
+This unhappy lady, as I understand it, has appeared to assault both the
+children, her own baby and your little son?&quot;</p>
+<p>&quot;That is so.&quot;</p>
+<p>&quot;But the assaults take different forms, do they not?  She has beaten
+your son.&quot;</p>
+<p>&quot;Once with a stick and once very savagely with her hands.&quot;</p>
+<p>&quot;Did she give no explanation why she struck him?&quot;</p>
+<p>&quot;None, save that she hated him.  Again and again she said so.&quot;</p>
+<p>&quot;Well, that is not unknown among stepmothers.  A posthumous jealousy,
+we will say.  Is the lady jealous by nature?&quot;</p>
+<p>&quot;Yes, she is very jealous--jealous with all the strength of her fiery
+tropical love.&quot;</p>
+<p>&quot;But the boy--he is fifteen, I understand, and probably very developed
+in mind, since his body has been circumscribed in action.  Did he give
+you no explanation of these assaults?&quot;</p>
+<p>&quot;No; he declared there was no reason.&quot;</p>
+<p>&quot;Were they good friends at other times?&quot;</p>
+<p>&quot;No; there was never any love between them.&quot;</p>
+<p>&quot;Yet you say he is affectionate?&quot;</p>
+<p>&quot;Never in the world could there be so devoted a son.  My life is his
+life.  He is absorbed in what I say or do.&quot;</p>
+<p>Once again Holmes made a note.  For some time he sat lost in thought.</p>
+<p>&quot;No doubt you and the boy were great comrades before this second
+marriage.  You were thrown very close together, were you not?&quot;</p>
+<p>&quot;Very much so.&quot;</p>
+<p>&quot;And the boy, having so affectionate a nature, was devoted, no doubt,
+to the memory of his mother?&quot;</p>
+<p>&quot;Most devoted.&quot;</p>
+<p>&quot;He would certainly seem to be a most interesting lad.  There is one
+other point about these assaults.  Were the strange attacks upon the
+baby and the assaults upon your son at the same period?&quot;</p>
+<p>&quot;In the first case it was so.  It was as if some frenzy had seized her,
+and she had vented her rage upon both.  In the second case it was only
+Jack who suffered.  Mrs. Mason had no complaint to make about the baby.&quot;</p>
+<p>&quot;That certainly complicates matters.&quot;</p>
+<p>&quot;I don't quite follow you, Mr. Holmes.&quot;</p>
+<p>&quot;Possibly not.  One forms provisional theories and waits for time or
+fuller knowledge to explode them.  A bad habit, Mr. Ferguson; but human
+nature is weak.  I fear that your old friend here has given an
+exaggerated view of my scientific methods.  However, I will only say at
+the present stage that your problem does not appear to me to be
+insoluble, and that you may expect to find us at Victoria at two
+o'clock.&quot;</p>
+<p>It was evening of a dull, foggy November day when, having left our bags
+at the &quot;Chequers,&quot; Lamberley, we drove through the Sussex clay of a
+long winding lane, and finally reached the isolated and ancient
+farm-house in which Ferguson dwelt.  It was a large, straggling
+building, very old in the centre, very new at the wings, with towering
+Tudor chimneys and a lichen-spotted, high-pitched roof of Horsham
+slabs.  The doorsteps were worn into curves, and the ancient tiles
+which lined the porch were marked with the rebus of a cheese and a man,
+after the original builder.  Within, the ceilings were corrugated with
+heavy oaken beams, and the uneven floors sagged into sharp curves.  An
+odour of age and decay pervaded the whole crumbling building.</p>
+<p>There was one very large central room, into which Ferguson led us.
+Here, in a huge old-fashioned fireplace with an iron screen behind it
+dated 1670, there blazed and spluttered a splendid log fire.</p>
+<p>The room, as I gazed round, was a most singular mixture of dates and of
+places.  The half-panelled walls may well have belonged to the original
+yeoman farmer of the seventeenth century.  They were ornamented,
+however, on the lower part by a line of well-chosen modern
+water-colours; while above, where yellow plaster took the place of oak,
+there was hung a fine collection of South American utensils and
+weapons, which had been brought, no doubt, by the Peruvian lady
+upstairs.  Holmes rose, with that quick curiosity which sprang from his
+eager mind, and examined them with some care.  He returned with his
+eyes full of thought.</p>
+<p>&quot;Hullo!&quot; he cried.  &quot;Hullo!&quot;</p>
+<p>A spaniel had lain in a basket in the corner.  It came slowly forward
+towards its master, walking with difficulty.  Its hind-legs moved
+irregularly and its tail was on the ground.  It licked Ferguson's hand.</p>
+<p>&quot;What is it, Mr. Holmes?&quot;</p>
+<p>&quot;The dog.  What's the matter with it?&quot;</p>
+<p>&quot;That's what puzzled the vet.  A sort of paralysis.  Spinal meningitis,
+he thought.  But it is passing.  He'll be all right soon--won't you,
+Carlo?&quot;</p>
+<p>A shiver of assent passed through the drooping tail.  The dog's
+mournful eyes passed from one of us to the other.  He knew that we were
+discussing his case.</p>
+<p>&quot;Did it come on suddenly?&quot;</p>
+<p>&quot;In a single night.&quot;</p>
+<p>&quot;How long ago?&quot;</p>
+<p>&quot;It may have been four months ago.&quot;</p>
+<p>&quot;Very remarkable.  Very suggestive.&quot;</p>
+<p>&quot;What do you see in it, Mr. Holmes?&quot;</p>
+<p>&quot;A confirmation of what I had already thought.&quot;</p>
+<p>&quot;For God's sake, what do you think, Mr. Holmes?  It may be a mere
+intellectual puzzle to you, but it is life and death to me!  My wife a
+would-be murderer--my child in constant danger!  Don't play with me,
+Mr. Holmes.  It is too terribly serious.&quot;</p>
+<p>The big Rugby three-quarter was trembling all over.  Holmes put his
+hand soothingly upon his arm.</p>
+<p>&quot;I fear that there is pain for you, Mr. Ferguson, whatever the solution
+may be,&quot; said he.  &quot;I would spare you all I can.  I cannot say more for
+the instant, but before I leave this house I hope I may have something
+definite.&quot;</p>
+<p>&quot;Please God you may!  If you will excuse me, gentlemen, I will go up to
+my wife's room and see if there has been any change.&quot;</p>
+<p>He was away some minutes, during which Holmes resumed his examination
+of the curiosities upon the wall.  When our host returned it was clear
+from his downcast face that he had made no progress.  He brought with
+him a tall, slim, brown-faced girl.</p>
+<p>&quot;The tea is ready, Dolores,&quot; said Ferguson.  &quot;See that your mistress
+has everything she can wish.&quot;</p>
+<p>&quot;She verra ill,&quot; cried the girl, looking with indignant eyes at her
+master.  &quot;She no ask for food.  She verra ill.  She need doctor.  I
+frightened stay alone with her without doctor.&quot;</p>
+<p>Ferguson looked at me with a question in his eyes.</p>
+<p>&quot;I should be so glad if I could be of use.&quot;</p>
+<p>&quot;Would your mistress see Dr. Watson?&quot;</p>
+<p>&quot;I take him.  I no ask leave.  She needs doctor.&quot;</p>
+<p>&quot;Then I'll come with you at once.&quot;</p>
+<p>I followed the girl, who was quivering with strong emotion, up the
+staircase and down an ancient corridor.  At the end was an iron-clamped
+and massive door.  It struck me as I looked at it that if Ferguson
+tried to force his way to his wife he would find it no easy matter.
+The girl drew a key from her pocket, and the heavy oaken planks creaked
+upon their old hinges.  I passed in and she swiftly followed, fastening
+the door behind her.</p>
+<p>On the bed a woman was lying who was clearly in a high fever.  She was
+only half conscious, but as I entered she raised a pair of frightened
+but beautiful eyes and glared at me in apprehension.  Seeing a
+stranger, she appeared to be relieved, and sank back with a sigh upon
+the pillow.  I stepped up to her with a few reassuring words, and she
+lay still while I took her pulse and temperature.  Both were high, and
+yet my impression was that the condition was rather that of mental and
+nervous excitement than of any actual seizure.</p>
+<p>&quot;She lie like that one day, two day.  I 'fraid she die,&quot; said the girl.</p>
+<p>The woman turned her flushed and handsome face towards me.</p>
+<p>&quot;Where is my husband?&quot;</p>
+<p>&quot;He is below, and would wish to see you.&quot;</p>
+<p>&quot;I will not see him.  I will not see him.&quot;  Then she seemed to wander
+off into delirium.  &quot;A fiend!  A fiend!  Oh, what shall I do with this
+devil?&quot;</p>
+<p>&quot;Can I help you in any way?&quot;</p>
+<p>&quot;No.  No one can help.  It is finished.  All is destroyed.  Do what I
+will, all is destroyed.&quot;</p>
+<p>The woman must have some strange delusion.  I could not see honest Bob
+Ferguson in the character of fiend or devil.</p>
+<p>&quot;Madame,&quot; I said, &quot;your husband loves you dearly.  He is deeply grieved
+at this happening.&quot;</p>
+<p>Again she turned on me those glorious eyes.</p>
+<p>&quot;He loves me.  Yes.  But do I not love him?  Do I not love him even to
+sacrifice myself rather than break his dear heart.  That is how I love
+him.  And yet he could think of me--he could speak of me so.&quot;</p>
+<p>&quot;He is full of grief, but he cannot understand.</p>
+<p>&quot;No, he cannot understand.  But he should trust.&quot;</p>
+<p>&quot;Will you not see him?&quot; I suggested.</p>
+<p>&quot;No, no; I cannot forget those terrible words nor the look upon his
+face.  I will not see him.  Go now.  You can do nothing for me.  Tell
+him only one thing.  I want my child.  I have a right to my child.
+That is the only message I can send him.&quot;  She turned her face to the
+wall and would say no more.</p>
+<p>I returned to the room downstairs, where Ferguson and Holmes still sat
+by the fire.  Ferguson listened moodily to my account of the interview.</p>
+<p>&quot;How can I send her the child?&quot; he said.  &quot;How do I know what strange
+impulse might come upon her?  How can I ever forget how she rose from
+beside it with its blood upon her lips?&quot;  He shuddered at the
+recollection.  &quot;The child is safe with Mrs. Mason, and there he must
+remain.&quot;</p>
+<p>A smart maid, the only modern thing which we had seen in the house, had
+brought in some tea.  As she was serving it the door opened and a youth
+entered the room.  He was a remarkable lad, pale-faced and fair-haired,
+with excitable light blue eyes which blazed into a sudden flame of
+emotion and joy as they rested upon his father.  He rushed forward and
+threw his arms round his neck with the abandon of a loving girl.</p>
+<p>&quot;Oh, daddy,&quot; he cried, &quot;I did not know that you were due yet.  I should
+have been here to meet you.  Oh, I am so glad to see you!&quot;</p>
+<p>Ferguson gently disengaged himself from the embrace with some little
+show of embarrassment.</p>
+<p>&quot;Dear old chap,&quot; said he, patting the flaxen head with a very tender
+hand.  &quot;I came early because my friends, Mr. Holmes and Dr. Watson,
+have been persuaded to come down and spend an evening with us.&quot;</p>
+<p>&quot;Is that Mr. Holmes, the detective?&quot;</p>
+<p>&quot;Yes.&quot;</p>
+<p>The youth looked at us with a very penetrating and, as it seemed to me,
+unfriendly gaze.</p>
+<p>&quot;What about your other child, Mr. Ferguson?&quot; asked Holmes.  &quot;Might we
+make the acquaintance of the baby?&quot;</p>
+<p>&quot;Ask Mrs. Mason to bring baby down,&quot; said Ferguson.  The boy went off
+with a curious, shambling gait which told my surgical eyes that he was
+suffering from a weak spine.  Presently he returned, and behind him
+came a tall, gaunt woman bearing in her arms a very beautiful child,
+dark-eyed, golden-haired, a wonderful mixture of the Saxon and the
+Latin.  Ferguson was evidently devoted to it, for he took it into his
+arms and fondled it most tenderly.</p>
+<p>&quot;Fancy anyone having the heart to hurt him,&quot; he muttered, as he glanced
+down at the small, angry red pucker upon the cherub throat.</p>
+<p>It was at this moment that I chanced to glance at Holmes, and saw a
+most singular intentness in his expression.  His face was as set as if
+it had been carved out of old ivory, and his eyes, which had glanced
+for a moment at father and child, were now fixed with eager curiosity
+upon something at the other side of the room.  Following his gaze I
+could only guess that he was looking out through the window at the
+melancholy, dripping garden.  It is true that a shutter had half closed
+outside and obstructed the view, but none the less it was certainly at
+the window that Holmes was fixing his concentrated attention.  Then he
+smiled, and his eyes came back to the baby.  On its chubby neck there
+was this small puckered mark.  Without speaking, Holmes examined it
+with care.  Finally he shook one of the dimpled fists which waved in
+front of him.</p>
+<p>&quot;Good-bye, little man.  You have made a strange start in life.  Nurse,
+I should wish to have a word with you in private.&quot;</p>
+<p>He took her aside and spoke earnestly for a few minutes.  I only heard
+the last words, which were: &quot;Your anxiety will soon, I hope, be set at
+rest.&quot;  The woman, who seemed to be a sour, silent kind of creature,
+withdrew with the child.</p>
+<p>&quot;What is Mrs. Mason like?&quot; asked Holmes.</p>
+<p>&quot;Not very prepossessing externally, as you can see, but a heart of
+gold, and devoted to the child.&quot;</p>
+<p>&quot;Do you like her, Jack?&quot; Holmes turned suddenly upon the boy.  His
+expressive mobile face shadowed over, and he shook his head.</p>
+<p>&quot;Jacky has very strong likes and dislikes,&quot; said Ferguson, putting his
+arm round the boy.  &quot;Luckily I am one of his likes.&quot;</p>
+<p>The boy cooed and nestled his head upon his father's breast.  Ferguson
+gently disengaged him.</p>
+<p>&quot;Run away, little Jacky,&quot; said he, and he watched his son with loving
+eyes until he disappeared.  &quot;Now, Mr. Holmes,&quot; he continued, when the
+boy was gone, &quot;I really feel that I have brought you on a fool's
+errand, for what can you possibly do, save give me your sympathy?  It
+must be an exceedingly delicate and complex affair from your point of
+view.&quot;</p>
+<p>&quot;It is certainly delicate,&quot; said my friend, with an amused smile, &quot;but
+I have not been struck up to now with its complexity.  It has been a
+case for intellectual deduction, but when this original intellectual
+deduction is confirmed point by point by quite a number of independent
+incidents, then the subjective becomes objective and we can say
+confidently that we have reached our goal.  I had, in fact, reached it
+before we left Baker Street, and the rest has merely been observation
+and confirmation.&quot;</p>
+<p>Ferguson put his big hand to his furrowed forehead.</p>
+<p>&quot;For Heaven's sake, Holmes,&quot; he said hoarsely, &quot;if you can see the
+truth in this matter, do not keep me in suspense.  How do I stand?
+What shall I do?  I care nothing as to how you have found your facts so
+long as you have really got them.&quot;</p>
+<p>&quot;Certainly I owe you an explanation, and you shall have it.  But you
+will permit me to handle the matter in my own way?  Is the lady capable
+of seeing us, Watson?&quot;</p>
+<p>&quot;She is ill, but she is quite rational.&quot;</p>
+<p>&quot;Very good.  It is only in her presence that we can clear the matter
+up.  Let us go up to her.&quot;</p>
+<p>&quot;She will not see me,&quot; cried Ferguson.</p>
+<p>&quot;Oh, yes, she will,&quot; said Holmes.  He scribbled a few lines upon a
+sheet of paper.  &quot;You at least have the <em>entrée</em>, Watson.  Will you
+have the goodness to give the lady this note?&quot;</p>
+<p>I ascended again and handed the note to Dolores, who cautiously opened
+the door.  A minute later I heard a cry from within, a cry in which joy
+and surprise seemed to be blended.  Dolores looked out.</p>
+<p>&quot;She will see them.  She will leesten,&quot; said she.</p>
+<p>At my summons Ferguson and Holmes came up.  As we entered the room
+Ferguson took a step or two towards his wife, who had raised herself in
+the bed, but she held out her hand to repulse him.  He sank into an
+arm-chair, while Holmes seated himself beside him, after bowing to the
+lady, who looked at him with wide-eyed amazement.</p>
+<p>&quot;I think we can dispense with Dolores,&quot; said Holmes.  &quot;Oh, very well,
+madame, if you would rather she stayed I can see no objection.  Now,
+Mr. Ferguson, I am a busy man with many calls, and my methods have to
+be short and direct.  The swiftest surgery is the least painful.  Let
+me first say what will ease your mind.  Your wife is a very good, a
+very loving, and a very ill-used woman.&quot;</p>
+<p>Ferguson sat up with a cry of joy.</p>
+<p>&quot;Prove that, Mr. Holmes, and I am your debtor for ever.&quot;</p>
+<p>&quot;I will do so, but in doing so I must wound you deeply in another
+direction.&quot;</p>
+<p>&quot;I care nothing so long as you clear my wife.  Everything on earth is
+insignificant compared to that.&quot;</p>
+<p>&quot;Let me tell you, then, the train of reasoning which passed through my
+mind in Baker Street.  The idea of a vampire was to me absurd.  Such
+things do not happen in criminal practice in England.  And yet your
+observation was precise.  You had seen the lady rise from beside the
+child's cot with the blood upon her lips.&quot;</p>
+<p>&quot;I did.&quot;</p>
+<p>&quot;Did it not occur to you that a bleeding wound may be sucked for some
+other purpose than to draw the blood from it?  Was there not a Queen in
+English history who sucked such a wound to draw poison from it?&quot;</p>
+<p>&quot;Poison!&quot;</p>
+<p>&quot;A South American household.  My instinct felt the presence of those
+weapons upon the wall before my eyes ever saw them.  It might have been
+other poison, but that was what occurred to me.  When I saw that little
+empty quiver beside the small bird-bow, it was just what I expected to
+see.  If the child were pricked with one of those arrows dipped in
+curare or some other devilish drug, it would mean death if the venom
+were not sucked out.</p>
+<p>&quot;And the dog!  If one were to use such a poison, would one not try it
+first in order to see that it had not lost its power?  I did not
+foresee the dog, but at least I understood him and he fitted into my
+reconstruction.</p>
+<p>&quot;Now do you understand?  Your wife feared such an attack.  She saw it
+made and saved the child's life, and yet she shrank from telling you
+all the truth, for she knew how you loved the boy and feared lest it
+break your heart.&quot;</p>
+<p>&quot;Jacky!&quot;</p>
+<p>&quot;I watched him as you fondled the child just now.  His face was clearly
+reflected in the glass of the window where the shutter formed a
+background.  I saw such jealousy, such cruel hatred, as I have seldom
+seen in a human face.&quot;</p>
+<p>&quot;My Jacky!&quot;</p>
+<p>&quot;You have to face it, Mr. Ferguson.  It is the more painful because it
+is a distorted love, a maniacal exaggerated love for you, and possibly
+for his dead mother, which has prompted his action.  His very soul is
+consumed with hatred for this splendid child, whose health and beauty
+are a contrast to his own weakness.&quot;</p>
+<p>&quot;Good God!  It is incredible!&quot;</p>
+<p>&quot;Have I spoken the truth, madame?&quot;</p>
+<p>The lady was sobbing, with her face buried in the pillows.  Now she
+turned to her husband.</p>
+<p>&quot;How could I tell you, Bob?  I felt the blow it would be to you.  It
+was better that I should wait and that it should come from some other
+lips than mine.  When this gentleman, who seems to have powers of
+magic, wrote that he knew all, I was glad.&quot;</p>
+<p>&quot;I think a year at sea would be my prescription for Master Jacky,&quot; said
+Holmes, rising from his chair.  &quot;Only one thing is still clouded,
+madame.  We can quite understand your attacks upon Master Jacky.  There
+is a limit to a mother's patience.  But how did you dare to leave the
+child these last two days?&quot;</p>
+<p>&quot;I had told Mrs. Mason.  She knew.&quot;</p>
+<p>&quot;Exactly.  So I imagined.&quot;</p>
+<p>Ferguson was standing by the bed, choking, his hands outstretched and
+quivering.</p>
+<p>&quot;This, I fancy, is the time for our exit, Watson,&quot; said Holmes in a
+whisper.  &quot;If you will take one elbow of the too faithful Dolores, I
+will take the other.  There, now,&quot; he added, as he closed the door
+behind him, &quot;I think we may leave them to settle the rest among
+themselves.&quot;</p>
+<p>I have only one further note of this case.  It is the letter which
+Holmes wrote in final answer to that with which the narrative begins.
+It ran thus:</p>
+<p>BAKER STREET,
+<em>Nov.</em> 21st.</p>
+<p><em>Re</em> Vampires.</p>
+<p>SIR,--</p>
+<p>Referring to your letter of the 19th, I beg to state that I have looked
+into the inquiry of your client, Mr. Robert Ferguson, of Ferguson and
+Muirhead, tea brokers, of Mincing Lane, and that the matter has been
+brought to a satisfactory conclusion.  With thanks for your
+recommendation,</p>
+<p>I am, Sir,
+Faithfully yours,
+SHERLOCK HOLMES.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="The_Adventure_of_the_Creeping_Man.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="The_Adventure_of_the_Three_Garridebs.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="The_Adventure_of_the_Creeping_Man.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="The_Adventure_of_the_Three_Garridebs.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        <script type="text/javascript" src="src/theme/theme-solarized_dark.js"></script>
+        <script type="text/javascript" src="src/theme/theme-solarized_light.js"></script>
+    </body>
+</html>

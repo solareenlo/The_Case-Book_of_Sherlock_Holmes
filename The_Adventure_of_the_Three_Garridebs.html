@@ -1,0 +1,757 @@
+<!DOCTYPE HTML>
+<html lang="ja" class="sidebar-visible no-js light">
+    <head>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-200.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-300.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-500.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-600.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-700.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-900.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-regular.woff2" crossorigin>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>The Adventure of the Three Garridebs - The Casebook of Sherlock Holmes</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+        <link rel="stylesheet" href="fonts/font.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="src/theme/solarized-light-hljs.css">
+        <link rel="stylesheet" href="src/theme/solarized-dark-hljs.css">
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">Home</a></li><li class="chapter-item expanded "><a href="The_Adventure_of_the_Mazarin_Stone.html"><strong aria-hidden="true">1.</strong> The Adventure of the Mazarin Stone</a></li><li class="chapter-item expanded "><a href="The_Problem_of_Thor_Bridge.html"><strong aria-hidden="true">2.</strong> The Problem of Thor Bridge</a></li><li class="chapter-item expanded "><a href="The_Adventure_of_the_Creeping_Man.html"><strong aria-hidden="true">3.</strong> The Adventure of the Creeping Man</a></li><li class="chapter-item expanded "><a href="The_Adventure_of_the_Sussex_Vampire.html"><strong aria-hidden="true">4.</strong> The Adventure of the Sussex Vampire</a></li><li class="chapter-item expanded "><a href="The_Adventure_of_the_Three_Garridebs.html" class="active"><strong aria-hidden="true">5.</strong> The Adventure of the Three Garridebs</a></li><li class="chapter-item expanded "><a href="The_Adventure_of_the_Illustrious_Client.html"><strong aria-hidden="true">6.</strong> The Adventure of the Illustrious Client</a></li><li class="chapter-item expanded "><a href="The_Adventure_of_the_Three_Gables.html"><strong aria-hidden="true">7.</strong> The Adventure of the Three Gables</a></li><li class="chapter-item expanded "><a href="The_Adventure_of_the_Blanched_Soldier.html"><strong aria-hidden="true">8.</strong> The Adventure of the Blanched Soldier</a></li><li class="chapter-item expanded "><a href="The_Adventure_of_the_Lions_Mane.html"><strong aria-hidden="true">9.</strong> The Adventure of the Lion's Mane</a></li><li class="chapter-item expanded "><a href="The_Adventure_of_the_Retired_Colourman.html"><strong aria-hidden="true">10.</strong> The Adventure of the Retired Colourman</a></li><li class="chapter-item expanded "><a href="The_Adventure_of_the_Veiled_Lodger.html"><strong aria-hidden="true">11.</strong> The Adventure of the Veiled Lodger</a></li><li class="chapter-item expanded "><a href="The_Adventure_of_Shoscombe_Old_Place.html"><strong aria-hidden="true">12.</strong> The Adventure of Shoscombe Old Place</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="solarized-light">Solarized Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="solarized-dark">Solarized Dark</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">The Casebook of Sherlock Holmes</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/solareenlo/The_Casebook_of_Sherlock_Holmes" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/solareenlo/The_Casebook_of_Sherlock_Holmes/edit/main/src/The_Adventure_of_the_Three_Garridebs.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="5-the-adventure-of-the-three-garridebs"><a class="header" href="#5-the-adventure-of-the-three-garridebs">5. The Adventure of the Three Garridebs</a></h1>
+<p>It may have been a comedy, or it may have been a tragedy.  It cost one
+man his reason, it cost me a blood-letting, and it cost yet another man
+the penalties of the law.  Yet there was certainly an element of
+comedy.  Well, you shall judge for yourselves.</p>
+<p>I remember the date very well, for it was in the same month that Holmes
+refused a knighthood for services which may perhaps some day be
+described.  I only refer to the matter in passing, for in my position
+of partner and confidant I am obliged to be particularly careful to
+avoid any indiscretion.  I repeat, however, that this enables me to fix
+the date, which was the latter end of June, 1902, shortly after the
+conclusion of the South African War.  Holmes had spent several days in
+bed, as was his habit from time to time, but he emerged that morning
+with a long foolscap document in his hand and a twinkle of amusement in
+his austere grey eyes.</p>
+<p>&quot;There is a chance for you to make some money, friend Watson,&quot; said he.
+&quot;Have you ever heard the name of Garrideb?&quot;</p>
+<p>I admitted that I had not.</p>
+<p>&quot;Well, if you can lay your hand upon a Garrideb, there's money in it.&quot;</p>
+<p>&quot;Why?&quot;</p>
+<p>&quot;Ah, that's a long story--rather a whimsical one, too.  I don't think
+in all our explorations of human complexities we have ever come upon
+anything more singular.  The fellow will be here presently for
+cross-examination, so I won't open the matter up till he comes.  But
+meanwhile, that's the name we want.&quot;</p>
+<p>The telephone directory lay on the table beside me, and I turned over
+the pages in a rather hopeless quest.  But to my amazement there was
+this strange name in its due place.  I gave a cry of triumph.</p>
+<p>&quot;Here you are, Holmes!  Here it is!&quot;</p>
+<p>Holmes took the book from my hand.</p>
+<p>&quot;'Garrideb, N.,'&quot; he read, &quot;'136 Little Ryder Street, W.'  Sorry to
+disappoint you, my dear Watson, but this is the man himself.  That is
+the address upon his letter.  We want another to match him.&quot;</p>
+<p>Mrs. Hudson had come in with a card upon a tray.  I took it up and
+glanced at it.</p>
+<p>&quot;Why, here it is!&quot; I cried in amazement.  &quot;This is a different initial.
+John Garrideb, Counsellor at Law, Moorville, Kansas, U.S.A.&quot;</p>
+<p>Holmes smiled as he looked at the card.  &quot;I am afraid you must make yet
+another effort, Watson,&quot; said he.  &quot;This gentleman is also in the plot
+already, though I certainly did not expect to see him this morning.
+However, he is in a position to tell us a good deal which I want to
+know.&quot;</p>
+<p>A moment later he was in the room.  Mr. John Garrideb, Counsellor at
+Law, was a short, powerful man with the round, fresh, clean-shaven face
+characteristic of so many American men of affairs.  The general effect
+was chubby and rather childlike, so that one received the impression of
+quite a young man with a broad set smile upon his face.  His eyes,
+however, were arresting.  Seldom in any human head have I seen a pair
+which bespoke a more intense inward life, so bright were they, so
+alert, so responsive to every change of thought.  His accent was
+American, but was not accompanied by any eccentricity of speech.</p>
+<p>&quot;Mr. Holmes?&quot; he asked, glancing from one to the other.  &quot;Ah, yes!
+Your pictures are not unlike you, sir, if I may say so.  I believe you
+have had a letter from my namesake, Mr. Nathan Garrideb, have you not?&quot;</p>
+<p>&quot;Pray sit down,&quot; said Sherlock Holmes.  &quot;We shall, I fancy, have a good
+deal to discuss.&quot;  He took up his sheets of foolscap.  &quot;You are, of
+course, the Mr. John Garrideb mentioned in this document.  But surely
+you have been in England some time?&quot;</p>
+<p>&quot;Why do you say that, Mr. Holmes?&quot; I seemed to read sudden suspicion in
+those expressive eyes.</p>
+<p>&quot;Your whole outfit is English.&quot;</p>
+<p>Mr. Garrideb forced a laugh.  &quot;I've read of your tricks, Mr. Holmes,
+but I never thought I would be the subject of them.  Where do you read
+that?&quot;</p>
+<p>&quot;The shoulder cut of your coat, the toes of your boots--could anyone
+doubt it?&quot;</p>
+<p>&quot;Well, well, I had no idea I was so obvious a Britisher.  But business
+brought me over here some time ago, and so, as you say, my outfit is
+nearly all London.  However, I guess your time is of value, and we did
+not meet to talk about the cut of my socks.  What about getting down to
+that paper you hold in your hand?&quot;</p>
+<p>Holmes had in some way ruffled our visitor, whose chubby face had
+assumed a far less amiable expression.</p>
+<p>&quot;Patience!  Patience, Mr. Garrideb!&quot; said my friend in a soothing
+voice.  &quot;Dr. Watson would tell you that these little digressions of
+mine sometimes prove in the end to have some bearing on the matter.
+But why did Mr. Nathan Garrideb not come with you?&quot;</p>
+<p>&quot;Why did he ever drag you into it at all?&quot; asked our visitor, with a
+sudden outflame of anger.  &quot;What in thunder had you to do with it?
+Here was a bit of professional business between two gentlemen, and one
+of them must needs call in a detective!  I saw him this morning, and he
+told me this fool-trick he had played me, and that's why I am here.
+But I feel bad about it, all the same.&quot;</p>
+<p>&quot;There was no reflection upon you, Mr. Garrideb.  It was simply zeal
+upon his part to gain your end--an end which is, I understand, equally
+vital for both of you.  He knew that I had means of getting
+information, and, therefore, it was very natural that he should apply
+to me.&quot;</p>
+<p>Our visitor's angry face gradually cleared.</p>
+<p>&quot;Well, that puts it different,&quot; said he.  &quot;When I went to see him this
+morning and he told me he had sent to a detective, I just asked for
+your address and came right away.  I don't want police butting into a
+private matter.  But if you are content just to help us find the man,
+there can be no harm in that.&quot;</p>
+<p>&quot;Well, that is just how it stands,&quot; said Holmes.  &quot;And now, sir, since
+you are here, we had best have a clear account from your own lips.  My
+friend here knows nothing of the details.&quot;</p>
+<p>Mr. Garrideb surveyed me with not too friendly a gaze.</p>
+<p>&quot;Need he know?&quot; he asked.</p>
+<p>&quot;We usually work together.&quot;</p>
+<p>&quot;Well, there's no reason it should be kept a secret.  I'll give you the
+facts as short as I can make them.  If you came from Kansas I would not
+need to explain to you who Alexander Hamilton Garrideb was.  He made
+his money in real estate, and afterwards in the wheat pit at Chicago,
+but he spent it in buying up as much land as would make one of your
+counties, lying along the Arkansas River, west of Fort Dodge.  It's
+grazing-land and lumber-land and arable-land and mineralized-land, and
+just every sort of land that brings dollars to the man that owns it.</p>
+<p>&quot;He had no kith nor kin--or, if he had, I never heard of it.  But he
+took a kind of pride in the queerness of his name.  That was what
+brought us together.  I was in the law at Topeka, and one day I had a
+visit from the old man, and he was tickled to death to meet another man
+with his own name.  It was his pet fad, and he was dead set to find out
+if there were any more Garridebs in the world.  'Find me another!' said
+he.  I told him I was a busy man and could not spend my life hiking
+round the world in search of Garridebs.  'None the less,' said he,
+'that is just what you will do if things pan out as I planned them.'  I
+thought he was joking, but there was a powerful lot of meaning in the
+words, as I was soon to discover.</p>
+<p>&quot;For he died within a year of saying them, and he left a will behind
+him.  It was the queerest will that has ever been filed in the State of
+Kansas.  His property was divided into three parts, and I was to have
+one on condition that I found two Garridebs who would share the
+remainder.  It's five million dollars for each if it is a cent, but we
+can't lay a finger on it until we all three stand in a row.</p>
+<p>&quot;It was so big a chance that I just let my legal practice slide and I
+set forth looking for Garridebs.  There is not one in the United
+States.  I went through it, sir, with a fine-toothed comb and never a
+Garrideb could I catch.  Then I tried the old country.  Sure enough
+there was the name in the London Telephone Directory.  I went after him
+two days ago and explained the whole matter to him.  But he is a lone
+man, like myself, with some women relations, but no men.  It says three
+adult men in the will.  So you see we still have a vacancy, and if you
+can help to fill it we will be very ready to pay your charges.&quot;</p>
+<p>&quot;Well, Watson,&quot; said Holmes, with a smile, &quot;I said it was rather
+whimsical, did I not?  I should have thought, sir, that your obvious
+way was to advertise in the agony columns of the papers.&quot;</p>
+<p>&quot;I have done that, Mr. Holmes.  No replies.&quot;</p>
+<p>&quot;Dear me!  Well, it is certainly a most curious little problem.  I may
+take a glance at it in my leisure.  By the way, it is curious that you
+should have come from Topeka.  I used to have a correspondent--he is
+dead now--old Dr. Lysander Starr, who was Mayor in 1890.&quot;</p>
+<p>&quot;Good old Dr. Starr!&quot; said our visitor.  &quot;His name is still honoured.
+Well, Mr. Holmes, I suppose all we can do is to report to you and let
+you know how we progress.  I reckon you will hear within a day or two.&quot;
+With this assurance our American bowed and departed.</p>
+<p>Holmes had lit his pipe, and he sat for some time with a curious smile
+upon his face.</p>
+<p>&quot;Well?&quot; I asked at last.</p>
+<p>&quot;I am wondering, Watson--just wondering!&quot;</p>
+<p>&quot;At what?&quot;</p>
+<p>Holmes took his pipe from his lips.</p>
+<p>&quot;I was wondering, Watson, what on earth could be the object of this man
+in telling us such a rigmarole of lies.  I nearly asked him so--for
+there are times when a brutal frontal attack is the best policy--but I
+judged it better to let him think he had fooled us.  Here is a man with
+an English coat frayed at the elbow and trousers bagged at the knee
+with a year's wear, and yet by this document and by his own account he
+is a provincial American lately landed in London.  There have been no
+advertisements in the agony columns.  You know that I miss nothing
+there.  They are my favourite covert for putting up a bird, and I would
+never have overlooked such a cock pheasant as that.  I never knew a Dr.
+Lysander Starr of Topeka.  Touch him where you would he was false.  I
+think the fellow is really an American, but he has worn his accent
+smooth with years of London.  What is his game, then, and what motive
+lies behind this preposterous search for Garridebs?  It's worth our
+attention, for, granting that the man is a rascal, he is certainly a
+complex and ingenious one.  We must now find out if our other
+correspondent is a fraud also.  Just ring him up, Watson.&quot;</p>
+<p>I did so, and heard a thin, quavering voice at the other end of the
+line.</p>
+<p>&quot;Yes, yes, I am Mr. Nathan Garrideb.  Is Mr. Holmes there?  I should
+very much like to have a word with Mr. Holmes.&quot;</p>
+<p>My friend took the instrument and I heard the usual syncopated dialogue.</p>
+<p>&quot;Yes, he has been here.  I understand that you don't know him....  How
+long? ... Only two days! ... Yes, yes, of course, it is a most
+captivating prospect.  Will you be at home this evening?  I suppose
+your namesake will not be there?  ... Very good, we will come then, for
+I would rather have a chat without him....  Dr. Watson will come with
+me....  I understood from your note that you did not go out often....
+Well, we shall be round about six.  You need not mention it to the
+American lawyer....  Very good.  Good-bye!&quot;</p>
+<p>It was twilight of a lovely spring evening, and even Little Ryder
+Street, one of the smaller offshoots from the Edgware Road, within a
+stone-cast of old Tyburn Tree of evil memory, looked golden and
+wonderful in the slanting rays of the setting sun.  The particular
+house to which we were directed was a large, old-fashioned, Early
+Georgian edifice with a flat brick face broken only by two deep bay
+windows on the ground floor.  It was on this ground floor that our
+client lived, and, indeed, the low windows proved to be the front of
+the huge room in which he spent his waking hours.  Holmes pointed as we
+passed to the small brass plate which bore the curious name.</p>
+<p>&quot;Up some years, Watson,&quot; he remarked, indicating its discoloured
+surface.  &quot;It's his real name, anyhow, and that is something to note.&quot;</p>
+<p>The house had a common stair, and there were a number of names painted
+in the hall some indicating offices and some private chambers.  It was
+not a collection of residential flats, but rather the abode of Bohemian
+bachelors.  Our client opened the door for us himself and apologized by
+saying that the woman in charge left at four o'clock.  Mr. Nathan
+Garrideb proved to be a very tall, loose-jointed, round-backed person,
+gaunt and bald, some sixty-odd years of age.  He had a cadaverous face,
+with the dull dead skin of a man to whom exercise was unknown.  Large
+round spectacles and a small projecting goat's beard combined with his
+stooping attitude to give him an expression of peering curiosity.  The
+general effect, however, was amiable, though eccentric.</p>
+<p>The room was as curious as its occupant.  It looked like a small
+museum.  It was both broad and deep, with cupboards and cabinets all
+round, crowded with specimens, geological and anatomical.  Cases of
+butterflies and moths flanked each side of the entrance.  A large table
+in the centre was littered with all sorts of debris, while the tall
+brass tube of a powerful microscope bristled up amongst them.  As I
+glanced round I was surprised at the universality of the man's
+interests.  Here was a case of ancient coins.  There was a cabinet of
+flint instruments.  Behind his central table was a large cupboard of
+fossil bones.  Above was a line of plaster skulls with such names as
+&quot;Neanderthal,&quot; &quot;Heidelberg,&quot; &quot;Cromagnon&quot; printed beneath them.  It was
+clear that he was a student of many subjects.  As he stood in front of
+us now, he held a piece of chamois leather in his right hand with which
+he was polishing a coin.</p>
+<p>&quot;Syracusan--of the best period,&quot; he explained, holding it up.  &quot;They
+degenerated greatly towards the end.  At their best I hold them
+supreme, though some prefer the Alexandrian school.  You will find a
+chair here, Mr. Holmes.  Pray allow me to clear these bones.  And you,
+sir--ah, yes, Dr. Watson--if you would have the goodness to put the
+Japanese vase to one side.  You see round me my little interests in
+life.  My doctor lectures me about never going out, but why should I go
+out when I have so much to hold me here?  I can assure you that the
+adequate cataloguing of one of those cabinets would take me three good
+months.&quot;</p>
+<p>Holmes looked round him with curiosity.</p>
+<p>&quot;But do you tell me that you <em>never</em> go out?&quot; he said</p>
+<p>&quot;Now and again I drive down to Sotheby's or Christie's.  Otherwise I
+very seldom leave my room.  I am not too strong, and my researches are
+very absorbing.  But you can imagine, Mr. Holmes, what a terrific
+shock--pleasant but terrific--it was for me when I heard of this
+unparalleled good fortune.  It only needs one more Garrideb to complete
+the matter, and surely we can find one.  I had a brother, but he is
+dead, and female relatives are disqualified.  But there must surely be
+others in the world.  I had heard that you handled strange cases, and
+that was why I sent to you.  Of course, this American gentleman is
+quite right, and I should have taken his advice first, but I acted for
+the best.&quot;</p>
+<p>&quot;I think you acted very wisely indeed,&quot; said Holmes.  &quot;But are you
+really anxious to acquire an estate in America?&quot;</p>
+<p>&quot;Certainly not, sir.  Nothing would induce me to leave my collection.
+But this gentleman has assured me that he will buy me out as soon as we
+have established our claim.  Five million dollars was the sum named.
+There are a dozen specimens in the market at the present moment which
+fill gaps in my collection, and which I am unable to purchase for want
+of a few hundred pounds.  Just think what I could do with five million
+dollars.  Why, I have the nucleus of a national collection.  I shall be
+the Hans Sloane of my age.&quot;</p>
+<p>His eyes gleamed behind his great spectacles.  It was very clear that
+no pains would be spared by Mr. Nathan Garrideb in finding a namesake.</p>
+<p>&quot;I merely called to make your acquaintance, and there is no reason why
+I should interrupt your studies,&quot; said Holmes.  &quot;I prefer to establish
+personal touch with those with whom I do business.  There are few
+questions I need ask, for I have your very clear narrative in my
+pocket, and I filled up the blanks when this American gentleman called.
+I understand that up to this week you were unaware of his existence.&quot;</p>
+<p>&quot;That is so.  He called last Tuesday.&quot;</p>
+<p>&quot;Did he tell you of our interview to-day?&quot;</p>
+<p>&quot;Yes, he came straight back to me.  He had been very angry.&quot;</p>
+<p>&quot;Why should he be angry?&quot;</p>
+<p>&quot;He seemed to think it was some reflection on his honour.  But he was
+quite cheerful again when he returned.&quot;</p>
+<p>&quot;Did he suggest any course of action?&quot;</p>
+<p>&quot;No, sir, he did not.&quot;</p>
+<p>&quot;Has he had, or asked for, any money from you?&quot;</p>
+<p>&quot;No, sir, never!&quot;</p>
+<p>&quot;You see no possible object he has in view?&quot;</p>
+<p>&quot;None, except what he states.&quot;</p>
+<p>&quot;Did you tell him of our telephone appointment?&quot;</p>
+<p>&quot;Yes, sir, I did.&quot;</p>
+<p>Holmes was lost in thought.  I could see that he was puzzled.</p>
+<p>&quot;Have you any articles of great value in your collection?&quot;</p>
+<p>&quot;No, sir.  I am not a rich man.  It is a good collection, but not a
+very valuable one.&quot;</p>
+<p>&quot;You have no fear of burglars?&quot;</p>
+<p>&quot;Not the least.&quot;</p>
+<p>&quot;How long have you been in these rooms?&quot;</p>
+<p>&quot;Nearly five years.&quot;</p>
+<p>Holmes's cross-examination was interrupted by an imperative knocking at
+the door.  No sooner had our client unlatched it than the American
+lawyer burst excitedly into the room.</p>
+<p>&quot;Here you are!&quot; he cried, waving a paper over his head.  &quot;I thought I
+should be in time to get you.  Mr. Nathan Garrideb, my congratulations!
+You are a rich man, sir.  Our business is happily finished and all is
+well.  As to you, Mr. Holmes, we can only say we are sorry if we have
+given you any useless trouble.&quot;</p>
+<p>He handed over the paper to our client, who stood staring at a marked
+advertisement.  Holmes and I leaned forward and read it over his
+shoulder.  This is how it ran:</p>
+<p>+-----------------------------------------------------+
+|                                                     |
+| HOWARD GARRIDEB.                                    |
+|                                                     |
+| Constructor of Agricultural Machinery.              |
+|                                                     |
+| Binders, reapers' steam and hand plows, drills,     |
+| harrows, farmers' carts, buckboards, and all other  |
+| appliances.                                         |
+|                                                     |
+| Estimates for Artesian Wells.                       |
+|                                                     |
+| Apply Grosvenor Buildings, Aston.                   |
+|                                                     |
++-----------------------------------------------------+</p>
+<p>&quot;Glorious!&quot; gasped our host.  &quot;That makes our third man.&quot;</p>
+<p>&quot;I had opened up inquiries in Birmingham,&quot; said the American, &quot;and my
+agent there has sent me this advertisement from a local paper.  We must
+hustle and put the thing through.  I have written to this man and told
+him that you will see him in his office to-morrow afternoon at four
+o'clock.&quot;</p>
+<p>&quot;You want <em>me</em> to see him?&quot;</p>
+<p>&quot;What do you say, Mr. Holmes?  Don't you think it would be wiser?  Here
+am I, a wandering American with a wonderful tale.  Why should he
+believe what I tell him?  But you are a Britisher with solid
+references, and he is bound to take notice of what you say.  I would go
+with you if you wished, but I have a very busy day to-morrow, and I
+could always follow you if you are in any trouble.&quot;</p>
+<p>&quot;Well, I have not made such a journey for years.&quot;</p>
+<p>&quot;It is nothing, Mr. Garrideb.  I have figured out your connections.
+You leave at twelve and should be there soon after two.  Then you can
+be back the same night.  All you have to do is to see this man, explain
+the matter, and get an affidavit of his existence.  By the Lord!&quot; he
+added hotly, &quot;considering I've come all the way from the centre of
+America, it is surely little enough if you go a hundred miles in order
+to put this matter through.&quot;</p>
+<p>&quot;Quite so,&quot; said Holmes.  &quot;I think what this gentleman says is very
+true.&quot;</p>
+<p>Mr. Nathan Garrideb shrugged his shoulders with a disconsolate air.
+&quot;Well, if you insist I shall go,&quot; said he.  &quot;It is certainly hard for
+me to refuse you anything, considering the glory of hope that you have
+brought into my life.&quot;</p>
+<p>&quot;Then that is agreed,&quot; said Holmes, &quot;and no doubt you will let me have
+a report as soon as you can.&quot;</p>
+<p>&quot;I'll see to that,&quot; said the American.  &quot;Well,&quot; he added, looking at
+his watch, &quot;I'll have to get on.  I'll call to-morrow, Mr. Nathan, and
+see you off to Birmingham.  Coming my way, Mr. Holmes?  Well, then,
+good-bye, and we may have good news for you to-morrow night.&quot;</p>
+<p>I noticed that my friend's face cleared when the American left the
+room, and the look of thoughtful perplexity had vanished.</p>
+<p>&quot;I wish I could look over your collection, Mr. Garrideb,&quot; said he.  &quot;In
+my profession all sorts of odd knowledge comes useful, and this room of
+yours is a storehouse of it.&quot;</p>
+<p>Our client shone with pleasure and his eyes gleamed from behind his big
+glasses.</p>
+<p>&quot;I had always heard, sir, that you were a very intelligent man,&quot; said
+he.  &quot;I could take you round now, if you have the time.&quot;</p>
+<p>&quot;Unfortunately, I have not.  But these specimens are so well labelled
+and classified that they hardly need your personal explanation.  If I
+should be able to look in to-morrow, I presume that there would be no
+objection to my glancing over them?&quot;</p>
+<p>&quot;None at all.  You are most welcome.  The place will, of course, be
+shut up, but Mrs. Saunders is in the basement up to four o'clock and
+would let you in with her key.&quot;</p>
+<p>&quot;Well, I happen to be clear to-morrow afternoon.  If you would say a
+word to Mrs. Saunders it would be quite in order.  By the way, who is
+your house-agent?&quot;</p>
+<p>Our client was amazed at the sudden question.</p>
+<p>&quot;Holloway and Steele, in the Edgware Road.  But why?&quot;</p>
+<p>&quot;I am a bit of an archæologist myself when it comes to houses,&quot; said
+Holmes, laughing.  &quot;I was wondering if this was Queen Anne or Georgian.&quot;</p>
+<p>&quot;Georgian, beyond doubt.&quot;</p>
+<p>&quot;Really.  I should have thought a little earlier.  However, it is
+easily ascertained.  Well, good-bye, Mr. Garrideb, and may you have
+every success in your Birmingham journey.&quot;</p>
+<p>The house-agent's was close by, but we found that it was closed for the
+day, so we made our way back to Baker Street.  It was not till after
+dinner that Holmes reverted to the subject.</p>
+<p>&quot;Our little problem draws to a close,&quot; said he.  &quot;No doubt you have
+outlined the solution in your own mind.&quot;</p>
+<p>&quot;I can make neither head nor tail of it.&quot;</p>
+<p>&quot;The head is surely clear enough and the tail we should see to-morrow.
+Did you notice nothing curious about that advertisement?&quot;</p>
+<p>&quot;I saw that the word 'plough' was misspelt.&quot;</p>
+<p>&quot;Oh, you did notice that, did you?  Come, Watson, you improve all the
+time.  Yes, it was bad English but good American.  The printer had set
+it up as received.  Then the buckboards.  That is American also.  And
+artesian wells are commoner with them than with us.  It was a typical
+American advertisement, but purporting to be from an English firm.
+What do you make of that?</p>
+<p>&quot;I can only suppose that this American lawyer put it in himself.  What
+his object was I fail to understand.&quot;</p>
+<p>&quot;Well, there are alternative explanations.  Anyhow, he wanted to get
+this good old fossil up to Birmingham.  That is very clear.  I might
+have told him that he was clearly going on a wild-goose chase, but, on
+second thoughts, it seemed better to clear the stage by letting him go.
+To-morrow, Watson--well, to-morrow will speak for itself.&quot;</p>
+<p>Holmes was up and out early.  When he returned at lunch-time I noticed
+that his face was very grave.</p>
+<p>&quot;This is a more serious matter than I had expected, Watson,&quot; said he.
+&quot;It is fair to tell you so, though I know it will only be an additional
+reason to you for running your head into danger.  I should know my
+Watson by now.  But there is danger, and you should know it.&quot;</p>
+<p>&quot;Well, it is not the first we have shared, Holmes.  I hope it may not
+be the last.  What is the particular danger this time?&quot;</p>
+<p>&quot;We are up against a very hard case.  I have identified Mr. John
+Garrideb, Counsellor at Law.  He is none other than 'Killer' Evans, of
+sinister and murderous reputation.&quot;</p>
+<p>&quot;I fear I am none the wiser.&quot;</p>
+<p>&quot;Ah, it is not part of your profession to carry about a portable
+Newgate Calendar in your memory.  I have been down to see friend
+Lestrade at the Yard.  There may be an occasional want of imaginative
+intuition down there, but they lead the world for thoroughness and
+method.  I had an idea that we might get on the track of our American
+friend in their records.  Sure enough, I found his chubby face smiling
+up at me from the Rogues' Portrait Gallery.  James Winter, <em>alias</em>
+Morecroft, <em>alias</em> Killer Evans, was the inscription below.&quot;  Holmes
+drew an envelope from his pocket.  &quot;I scribbled down a few points from
+his dossier.  Aged forty-four.  Native of Chicago.  Known to have shot
+three men in the States.  Escaped from penitentiary through political
+influence.  Came to London in 1893.  Shot a man over cards in a night
+club in the Waterloo Road in January, 1895.  Man died, but he was shown
+to have been the aggressor in the row.  Dead man was identified as
+Rodger Prescott, famous as forger and coiner in Chicago.  Killer Evans
+released in 1901.  Has been under police supervision since, but so far
+as known has led an honest life.  Very dangerous man, usually carries
+arms and is prepared to use them.  That is our bird, Watson--a sporting
+bird, as you must admit.&quot;</p>
+<p>&quot;But what is his game?&quot;</p>
+<p>&quot;Well, it begins to define itself.  I have been to the house-agents.
+Our client, as he told us, has been there five years.  It was unlet for
+a year before then.  The previous tenant was a gentleman at large named
+Waldron.  Waldron's appearance was well remembered at the office.  He
+had suddenly vanished and nothing more been heard of him.  He was a
+tall, bearded man with very dark features.  Now, Prescott, the man whom
+Killer Evans had shot, was, according to Scotland Yard, a tall, dark
+man with a beard.  As a working hypothesis, I think we may take it that
+Prescott, the American criminal, used to live in the very room which
+our innocent friend now devotes to his museum.  So at last we get a
+link, you see.&quot;</p>
+<p>&quot;And the next link?&quot;</p>
+<p>&quot;Well, we must go now and look for that.&quot;</p>
+<p>He took a revolver from the drawer and handed it to me.</p>
+<p>&quot;I have my old favourite with me.  If our Wild West friend tries to
+live up to his nickname, we must be ready for him.  I'll give you an
+hour for a siesta, Watson, and then I think it will be time for our
+Ryder Street adventure.&quot;</p>
+<p>It was just four o'clock when we reached the curious apartment of
+Nathan Garrideb.  Mrs. Saunders, the caretaker, was about to leave, but
+she had no hesitation in admitting us, for the door shut with a spring
+lock and Holmes promised to see that all was safe before we left.
+Shortly afterwards the outer door closed, her bonnet passed the bow
+window, and we knew that we were alone in the lower floor of the house.
+Holmes made a rapid examination of the premises.  There was one
+cupboard in a dark corner which stood out a little from the wall.  It
+was behind this that we eventually crouched, while Holmes in a whisper
+outlined his intentions.</p>
+<p>&quot;He wanted to get our amiable friend out of his room--that is very
+clear, and, as the collector never went out, it took some planning to
+do it.  The whole of this Garrideb invention was apparently for no
+other end.  I must say, Watson, that there is a certain devilish
+ingenuity about it, even if the queer name of the tenant did give him
+an opening which he could hardly have expected.  He wove his plot with
+remarkable cunning.&quot;</p>
+<p>&quot;But what did he want?&quot;</p>
+<p>&quot;Well, that is what we are here to find out.  It has nothing whatever
+to do with our client, so far as I can read the situation.  It is
+something connected with the man he murdered--the man who may have been
+his confederate in crime.  There is some guilty secret in the room.
+That is how I read it.  At first I thought our friend might have
+something in his collection more valuable than he knew--something worth
+the attention of a big criminal.  But the fact that Rodger Prescott of
+evil memory inhabited these rooms points to some deeper reason.  Well,
+Watson, we can but possess our souls in patience and see what the hour
+may bring.&quot;</p>
+<p>That hour was not long in striking.  We crouched closer in the shadow
+as we heard the outer door open and shut.  Then came the sharp,
+metallic snap of a key, and the American was in the room.  He closed
+the door softly behind him, took a sharp glance around him to see that
+all was safe, threw off his overcoat, and walked up to the central
+table with the brisk manner of one who knows exactly what he has to do
+and how to do it.  He pushed the table to one side, tore up the square
+of carpet on which it rested, rolled it completely back, and then,
+drawing a jemmy from his inside pocket, he knelt down and worked
+vigorously upon the floor.  Presently we heard the sound of sliding
+boards, and an instant later a square had opened in the planks.  Killer
+Evans struck a match, lit a stump of candle, and vanished from our view.</p>
+<p>Clearly our moment had come.  Holmes touched my wrist as a signal, and
+together we stole across to the open trapdoor.  Gently as we moved,
+however, the old floor must have creaked under our feet, for the head
+of our American, peering anxiously round, emerged suddenly from the
+open space.  His face turned upon us with a glare of baffled rage,
+which gradually softened into a rather shamefaced grin as he realized
+that two pistols were pointed at his head.</p>
+<p>&quot;Well, well!&quot; said he, coolly, as he scrambled to the surface.  &quot;I
+guess you have been one too many for me, Mr. Holmes.  Saw through my
+game, I suppose, and played me for a sucker from the first.  Well, sir,
+I hand it to you; you have me beat and----&quot;</p>
+<p>In an instant he had whisked out a revolver from his breast and had
+fired two shots.  I felt a sudden hot sear as if a red-hot iron had
+been pressed to my thigh.  There was a crash as Holmes's pistol came
+down on the man's head.  I had a vision of him sprawling upon the floor
+with blood running down his face while Holmes rummaged him for weapons.
+Then my friend's wiry arms were round me and he was leading me to a
+chair.</p>
+<p>&quot;You're not hurt, Watson?  For God's sake, say that you are not hurt!&quot;</p>
+<p>It was worth a wound--it was worth many wounds--to know the depth of
+loyalty and love which lay behind that cold mask.  The clear, hard eyes
+were dimmed for a moment, and the firm lips were shaking.  For the one
+and only time I caught a glimpse of a great heart as well as of a great
+brain.  All my years of humble but single-minded service culminated in
+that moment of revelation.</p>
+<p>&quot;It's nothing, Holmes.  It's a mere scratch.&quot;</p>
+<p>He had ripped up my trousers with his pocket-knife.</p>
+<p>&quot;You are right,&quot; he cried, with an immense sigh of relief.  &quot;It is
+quite superficial.&quot;  His face set like flint as he glared at our
+prisoner, who was sitting up with a dazed face.  &quot;By the Lord, it is as
+well for you.  If you had killed Watson, you would not have got out of
+this room alive.  Now, sir, what have you to say for yourself?&quot;</p>
+<p>He had nothing to say for himself.  He only lay and scowled.  I leaned
+on Holmes's arm, and together we looked down into the small cellar
+which had been disclosed by the secret flap.  It was still illuminated
+by the candle which Evans had taken down with him.  Our eyes fell upon
+a mass of rusted machinery, great rolls of paper, a litter of bottles,
+and, neatly arranged upon a small table, a number of neat little
+bundles.</p>
+<p>&quot;A printing press--a counterfeiter's outfit,&quot; said Holmes.</p>
+<p>&quot;Yes, sir,&quot; said our prisoner, staggering slowly to his feet and then
+sinking into the chair.  &quot;The greatest counterfeiter London ever saw.
+That's Prescott's machine, and those bundles on the table are two
+thousand of Prescott's notes worth a hundred each and fit to pass
+anywhere.  Help yourselves, gentlemen.  Call it a deal and let me beat
+it.&quot;</p>
+<p>Holmes laughed.</p>
+<p>&quot;We don't do things like that, Mr. Evans.  There is no bolt-hole for
+you in this country.  You shot this man Prescott, did you not?&quot;</p>
+<p>&quot;Yes, sir, and got five years for it, though it was he who pulled on
+me.  Five years--when I should have had a medal the size of a soup
+plate.  No living man could tell a Prescott from a Bank of England, and
+if I hadn't put him out he would have flooded London with them.  I was
+the only one in the world who knew where he made them.  Can you wonder
+that I wanted to get to the place?  And can you wonder that when I
+found this crazy boob of a bug-hunter with the queer name squatting
+right on the top of it, and never quitting his room, I had to do the
+best I could to shift him?  Maybe I would have been wiser if I had put
+him away.  It would have been easy enough, but I'm a soft-hearted guy
+that can't begin shooting unless the other man has a gun also.  But
+say, Mr. Holmes, what have I done wrong, anyhow?  I've not used this
+plant.  I've not hurt this old stiff.  Where do you get me?&quot;</p>
+<p>&quot;Only attempted murder, so far as I can see,&quot; said Holmes.  &quot;But that's
+not our job.  They take that at the next stage.  What we wanted at
+present was just your sweet self.  Please give the Yard a call, Watson.
+It won't be entirely unexpected.&quot;</p>
+<p>So those were the facts about Killer Evans and his remarkable invention
+of the three Garridebs.  We heard later that our poor old friend never
+got over the shock of his dissipated dreams.  When his castle in the
+air fell down, it buried him beneath the ruins.  He was last heard of
+at a nursing-home in Brixton.  It was a glad day at the Yard when the
+Prescott outfit was discovered, for, though they knew that it existed,
+they had never been able, after the death of the man, to find out where
+it was.  Evans had indeed done great service and caused several worthy
+C.I.D. men to sleep the sounder, for the counterfeiter stands in a
+class by himself as a public danger.  They would willingly have
+subscribed to that soup-plate medal of which the criminal had spoken,
+but an unappreciative Bench took a less favourable view, and the Killer
+returned to those shades from which he had just emerged.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="The_Adventure_of_the_Sussex_Vampire.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="The_Adventure_of_the_Illustrious_Client.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="The_Adventure_of_the_Sussex_Vampire.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="The_Adventure_of_the_Illustrious_Client.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        <script type="text/javascript" src="src/theme/theme-solarized_dark.js"></script>
+        <script type="text/javascript" src="src/theme/theme-solarized_light.js"></script>
+    </body>
+</html>

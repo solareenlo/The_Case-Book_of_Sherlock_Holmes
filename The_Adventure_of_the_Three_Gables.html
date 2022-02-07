@@ -1,0 +1,767 @@
+<!DOCTYPE HTML>
+<html lang="ja" class="sidebar-visible no-js light">
+    <head>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-200.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-300.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-500.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-600.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-700.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-900.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-regular.woff2" crossorigin>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>The Adventure of the Three Gables - The Casebook of Sherlock Holmes</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+        <link rel="stylesheet" href="fonts/font.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="src/theme/solarized-light-hljs.css">
+        <link rel="stylesheet" href="src/theme/solarized-dark-hljs.css">
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">Home</a></li><li class="chapter-item expanded "><a href="The_Adventure_of_the_Mazarin_Stone.html"><strong aria-hidden="true">1.</strong> The Adventure of the Mazarin Stone</a></li><li class="chapter-item expanded "><a href="The_Problem_of_Thor_Bridge.html"><strong aria-hidden="true">2.</strong> The Problem of Thor Bridge</a></li><li class="chapter-item expanded "><a href="The_Adventure_of_the_Creeping_Man.html"><strong aria-hidden="true">3.</strong> The Adventure of the Creeping Man</a></li><li class="chapter-item expanded "><a href="The_Adventure_of_the_Sussex_Vampire.html"><strong aria-hidden="true">4.</strong> The Adventure of the Sussex Vampire</a></li><li class="chapter-item expanded "><a href="The_Adventure_of_the_Three_Garridebs.html"><strong aria-hidden="true">5.</strong> The Adventure of the Three Garridebs</a></li><li class="chapter-item expanded "><a href="The_Adventure_of_the_Illustrious_Client.html"><strong aria-hidden="true">6.</strong> The Adventure of the Illustrious Client</a></li><li class="chapter-item expanded "><a href="The_Adventure_of_the_Three_Gables.html" class="active"><strong aria-hidden="true">7.</strong> The Adventure of the Three Gables</a></li><li class="chapter-item expanded "><a href="The_Adventure_of_the_Blanched_Soldier.html"><strong aria-hidden="true">8.</strong> The Adventure of the Blanched Soldier</a></li><li class="chapter-item expanded "><a href="The_Adventure_of_the_Lions_Mane.html"><strong aria-hidden="true">9.</strong> The Adventure of the Lion's Mane</a></li><li class="chapter-item expanded "><a href="The_Adventure_of_the_Retired_Colourman.html"><strong aria-hidden="true">10.</strong> The Adventure of the Retired Colourman</a></li><li class="chapter-item expanded "><a href="The_Adventure_of_the_Veiled_Lodger.html"><strong aria-hidden="true">11.</strong> The Adventure of the Veiled Lodger</a></li><li class="chapter-item expanded "><a href="The_Adventure_of_Shoscombe_Old_Place.html"><strong aria-hidden="true">12.</strong> The Adventure of Shoscombe Old Place</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="solarized-light">Solarized Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="solarized-dark">Solarized Dark</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">The Casebook of Sherlock Holmes</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/solareenlo/The_Casebook_of_Sherlock_Holmes" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/solareenlo/The_Casebook_of_Sherlock_Holmes/edit/main/src/The_Adventure_of_the_Three_Gables.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="7-the-adventure-of-the-three-gables"><a class="header" href="#7-the-adventure-of-the-three-gables">7. The Adventure of the Three Gables</a></h1>
+<p>I don't think that any of my adventures with Mr. Sherlock Holmes opened
+quite so abruptly, or so dramatically, as that which I associate with
+The Three Gables.  I had not seen Holmes for some days, and had no idea
+of the new channel into which his activities had been directed.  He was
+in a chatty mood that morning, however, and had just settled me into
+the well-worn low arm-chair on one side of the fire, while he had
+curled down with his pipe in his mouth upon the opposite chair, when
+our visitor arrived.  If I had said that a mad bull had arrived, it
+would give a clearer impression of what occurred.</p>
+<p>The door had flown open and a huge negro had burst into the room.  He
+would have been a comic figure if he had not been terrific, for he was
+dressed in a very loud grey check suit with a flowing salmon-coloured
+tie.  His broad face and flattened nose were thrust forward, as his
+sullen dark eyes, with a smouldering gleam of malice in them, turned
+from one of us to the other.</p>
+<p>&quot;Which of you genelmen is Masser Holmes?&quot; he asked.</p>
+<p>Holmes raised his pipe with a languid smile.</p>
+<p>&quot;Oh! it's you, is it?&quot; said our visitor, coming with an unpleasant,
+stealthy step round the angle of the table.  &quot;See here, Masser Holmes,
+you keep your hands out of other folks' business.  Leave folks to
+manage their own affairs.  Got that, Masser Holmes?&quot;</p>
+<p>&quot;Keep on talking,&quot; said Holmes.  &quot;It's fine.&quot;</p>
+<p>&quot;Oh! it's fine, is it?&quot; growled the savage.  &quot;It won't be so damn fine
+if I have to trim you up a bit.  I've handled your kind before now, and
+they didn't look fine when I was through with them.  Look at that,
+Masser Holmes!&quot;</p>
+<p>He swung a huge knotted lump of a fist under my friend's nose.  Holmes
+examined it closely with an air of great interest.  &quot;Were you born so?&quot;
+he asked.  &quot;Or did it come by degrees?&quot;</p>
+<p>It may have been the icy coolness of my friend, or it may have been the
+slight clatter which I made as I picked up the poker.  In any case, our
+visitor's manner became less flamboyant.</p>
+<p>&quot;Well, I've given you fair warnin',&quot; said he.  &quot;I've a friend that's
+interested out Harrow way--you know what I'm meaning--and he don't
+intend to have no buttin' in by you.  Got that?  You ain't the law, and
+I ain't the law either, and if you come in I'll be on hand also.  Don't
+you forget it.&quot;</p>
+<p>&quot;I've wanted to meet you for some time,&quot; said Holmes.  &quot;I won't ask you
+to sit down, for I don't like the smell of you, but aren't you Steve
+Dixie, the bruiser?</p>
+<p>&quot;That's my name, Masser Holmes, and you'll get put through it for sure
+if you give me any lip.&quot;</p>
+<p>&quot;It is certainly the last thing you need,&quot; said Holmes, staring at our
+visitor's hideous mouth.  &quot;But it was the killing of young Perkins
+outside the Holborn Bar----  What! you're not going?&quot;</p>
+<p>The negro had sprung back, and his face was leaden.  &quot;I won't listen to
+no such talk,&quot; said he.  &quot;What have I to do with this 'ere Perkins,
+Masser Holmes?  I was trainin' at the Bull Ring in Birmingham when this
+boy done gone get into trouble.&quot;</p>
+<p>&quot;Yes, you'll tell the magistrate about it, Steve,&quot; said Holmes.  &quot;I've
+been watching you and Barney Stockdale----&quot;</p>
+<p>&quot;So help me the Lord!  Masser Holmes----&quot;</p>
+<p>&quot;That's enough.  Get out of it.  I'll pick you up when I want you.&quot;</p>
+<p>&quot;Good mornin', Masser Holmes.  I hope there ain't no hard feelin's
+about this 'ere visit?&quot;</p>
+<p>&quot;There will be unless you tell me who sent you.&quot;</p>
+<p>&quot;Why, there ain't no secret about that, Masser Holmes.  It was that
+same genelman that you have just done gone mention.&quot;</p>
+<p>&quot;And who set him on to it?&quot;</p>
+<p>&quot;S'elp me.  I don't know, Masser Holmes.  He just say, 'Steve, you go
+see Mr. Holmes, and tell him his life ain't safe if he go down Harrow
+way.'  That's the whole truth.&quot;</p>
+<p>Without waiting for any further questioning, our visitor bolted out of
+the room almost as precipitately as he had entered.  Holmes knocked out
+the ashes of his pipe with a quiet chuckle.</p>
+<p>&quot;I am glad you were not forced to break his woolly head, Watson.  I
+observed your manoeuvres with the poker.  But he is really rather a
+harmless fellow, a great muscular, foolish, blustering baby, and easily
+cowed, as you have seen.  He is one of the Spencer John gang and has
+taken part in some dirty work of late which I may clear up when I have
+time.  His immediate principal, Barney, is a more astute person.  They
+specialize in assaults, intimidation, and the like.  What I want to
+know is, who is at the back of them on this particular occasion?&quot;</p>
+<p>&quot;But why do they want to intimidate you?&quot;</p>
+<p>&quot;It is this Harrow Weald case.  It decides me to look into the matter,
+for if it is worth anyone's while to take so much trouble, there must
+be something in it.&quot;</p>
+<p>&quot;But what is it?&quot;</p>
+<p>&quot;I was going to tell you when we had this comic interlude.  Here is
+Mrs. Maberley's note.  If you care to come with me we will wire her and
+go out at once.&quot;</p>
+<p>DEAR MR. SHERLOCK HOLMES, (I read)--</p>
+<p>I have had a succession of strange incidents occur to me in connection
+with this house, and I should much value your advice.  You would find
+me at home any time to-morrow.  The house is within a short walk of the
+Weald Station.  I believe that my late husband, Mortimer Maberley, was
+one of your early clients.</p>
+<p>Yours faithfully,
+MARY MABERLEY.</p>
+<p>The address was &quot;The Three Gables, Harrow Weald.&quot;</p>
+<p>&quot;So that's that!&quot; said Holmes.  &quot;And now, if you can spare the time,
+Watson, we will get upon our way.&quot;</p>
+<p>A short railway journey, and a shorter drive, brought us to the house,
+a brick and timber villa, standing in its own acre of undeveloped
+grassland.  Three small projections above the upper windows made a
+feeble attempt to justify its name.  Behind was a grove of melancholy,
+half-grown pines, and the whole aspect of the place was poor and
+depressing.  None the less, we found the house to be well furnished,
+and the lady who received us was a most engaging elderly person, who
+bore every mark of refinement and culture.</p>
+<p>&quot;I remember your husband well, madam,&quot; said Holmes, &quot;though it is some
+years since he used my services in some trifling matter.&quot;</p>
+<p>&quot;Probably you would be more familiar with the name of my son Douglas.&quot;</p>
+<p>Holmes looked at her with great interest.</p>
+<p>&quot;Dear me!  Are you the mother of Douglas Maberley?  I knew him
+slightly.  But, of course, all London knew him.  What a magnificent
+creature he was!  Where is he now?&quot;</p>
+<p>&quot;Dead, Mr. Holmes, dead!  He was Attaché at Rome, and he died there of
+pneumonia last month.&quot;</p>
+<p>&quot;I am sorry.  One could not connect death with such a man.  I have
+never known anyone so vitally alive.  He lived intensely--every fibre
+of him!&quot;</p>
+<p>&quot;Too intensely, Mr. Holmes.  That was the ruin of him.  You remember
+him as he was--debonair and splendid.  You did not see the moody,
+morose, brooding creature into which he developed.  His heart was
+broken.  In a single month I seemed to see my gallant boy turn into a
+worn-out cynical man.&quot;</p>
+<p>&quot;A love affair--a woman?&quot;</p>
+<p>&quot;Or a fiend.  Well, it was not to talk of my poor lad that I asked you
+to come, Mr. Holmes.&quot;</p>
+<p>&quot;Dr. Watson and I are at your service.&quot;</p>
+<p>&quot;There have been some very strange happenings.  I have been in this
+house more than a year now, and as I wished to lead a retired life I
+have seen little of my neighbours.  Three days ago I had a call from a
+man who said that he was a house agent.  He said that this house would
+exactly suit a client of his and that if I would part with it money
+would be no object.  It seemed to me very strange, as there are several
+empty houses on the market which appear to be equally eligible, but
+naturally I was interested in what he said.  I therefore named a price
+which was five hundred pounds more than I gave.  He at once closed with
+the offer, but added that his client desired to buy the furniture as
+well and would I put a price upon it.  Some of this furniture is from
+my old home, and it is, as you see, very good, so that I named a good
+round sum.  To this also he at once agreed.  I had always wanted to
+travel, and the bargain was so good a one that it really seemed that I
+should be my own mistress for the rest of my life.</p>
+<p>&quot;Yesterday the man arrived with the agreement all drawn out.  Luckily I
+showed it to Mr. Sutro, my lawyer, who lives in Harrow.  He said to me,
+'This is a very strange document.  Are you aware that if you sign it
+you could not legally take <em>anything</em> out of the house--not even your
+own private possessions?'  When the man came again in the evening I
+pointed this out, and I said that I meant only to sell the furniture.</p>
+<p>&quot;'No, no; everything,' said he.</p>
+<p>&quot;'But my clothes?  My jewels?'</p>
+<p>&quot;'Well, well, some concession might be made for your personal effects.
+But nothing shall go out of the house unchecked.  My client is a very
+liberal man, but he has his fads and his own way of doing things.  It
+is everything or nothing with him.'</p>
+<p>&quot;'Then it must be nothing,' said I.  And there the matter was left, but
+the whole thing seemed to me to be so unusual that I thought----&quot;</p>
+<p>Here we had a very extraordinary interruption.</p>
+<p>Holmes raised his hand for silence.  Then he strode across the room,
+flung open the door, and dragged in a great gaunt woman whom he had
+seized by the shoulder.  She entered with ungainly struggles, like some
+huge awkward chicken, torn squawking out of its coop.</p>
+<p>&quot;Leave me alone!  What are you a-doin' of?&quot; she screeched.</p>
+<p>&quot;Why, Susan, what is this?&quot;</p>
+<p>&quot;Well, ma'am, I was comin' in to ask if the visitors was stayin' for
+lunch when this man jumped out at me.&quot;</p>
+<p>&quot;I have been listening to her for the last five minutes, but did not
+wish to interrupt your most interesting narrative.  Just a little
+wheezy, Susan, are you not?  You breathe too heavily for that kind of
+work.&quot;</p>
+<p>Susan turned a sulky but amazed face upon her captor.  &quot;Who be you,
+anyhow, and what right have you a-pullin' me about like this?&quot;</p>
+<p>&quot;It was merely that I wished to ask a question in your presence.  Did
+you, Mrs. Maberley, mention to anyone that you were going to write to
+me and consult me?&quot;</p>
+<p>&quot;No, Mr. Holmes, I did not.&quot;</p>
+<p>&quot;Who posted your letter?&quot;</p>
+<p>&quot;Susan did.&quot;</p>
+<p>&quot;Exactly.  Now, Susan, to whom was it that you wrote or sent a message
+to say that your mistress was asking advice from me?&quot;</p>
+<p>&quot;It's a lie.  I sent no message.&quot;</p>
+<p>&quot;Now, Susan, wheezy people may not live long, you know.  It's a wicked
+thing to tell fibs.  Whom did you tell?&quot;</p>
+<p>&quot;Susan!&quot; cried her mistress, &quot;I believe you are a bad, treacherous
+woman.  I remember now that I saw you speaking to someone over the
+hedge.&quot;</p>
+<p>&quot;That was my own business,&quot; said the woman sullenly.</p>
+<p>&quot;Suppose I tell you that it was Barney Stockdale to whom you spoke?&quot;
+said Holmes.</p>
+<p>&quot;Well, if you know, what do you want to ask for?&quot;</p>
+<p>&quot;I was not sure, but I know now.  Well now, Susan, it will be worth ten
+pounds to you if you will tell me who is at the back of Barney.&quot;</p>
+<p>&quot;Someone that could lay down a thousand pounds for every ten you have
+in the world.&quot;</p>
+<p>&quot;So, a rich man?  No; you smiled--a rich woman.  Now we have got so
+far, you may as well give the name and earn the tenner.&quot;</p>
+<p>&quot;I'll see you in hell first.&quot;</p>
+<p>&quot;Oh, Susan!  Language!&quot;</p>
+<p>&quot;I am clearing out of here.  I've had enough of you all.  I'll send for
+my box to-morrow.&quot;  She flounced for the door.</p>
+<p>&quot;Good-bye, Susan.  Paregoric is the stuff....  Now,&quot; he continued,
+turning suddenly from lively to severe when the door had closed behind
+the flushed and angry woman, &quot;this gang means business.  Look how close
+they play the game.  Your letter to me had the 10 p.m. postmark.  And
+yet Susan passes the word to Barney.  Barney has time to go to his
+employer and get instructions; he or she--I incline to the latter from
+Susan's grin when she thought I had blundered--forms a plan.  Black
+Steve is called in, and I am warned off by eleven o'clock next morning.
+That's quick work, you know.&quot;</p>
+<p>&quot;But what do they want?&quot;</p>
+<p>&quot;Yes, that's the question.  Who had the house before you?&quot;</p>
+<p>&quot;A retired sea captain, called Ferguson.&quot;</p>
+<p>&quot;Anything remarkable about him?&quot;</p>
+<p>&quot;Not that ever I heard of.&quot;</p>
+<p>&quot;I was wondering whether he could have buried something.  Of course,
+when people bury treasure nowadays they do it in the Post Office bank.
+But there are always some lunatics about.  It would be a dull world
+without them.  At first I thought of some buried valuable.  But why, in
+that case, should they want your furniture?  You don't happen to have a
+Raphael or a first folio Shakespeare without knowing it?&quot;</p>
+<p>&quot;No, I don't think I have anything rarer than a Crown Derby tea-set.&quot;</p>
+<p>&quot;That would hardly justify all this mystery.  Besides, why should they
+not openly state what they want?  If they covet your tea-set, they can
+surely offer a price for it without buying you out, lock, stock, and
+barrel.  No, as I read it, there is something which you do not know
+that you have, and which you would not give up if you did know.&quot;</p>
+<p>&quot;That is how I read it,&quot; said I.</p>
+<p>&quot;Dr. Watson agrees, so that settles it.&quot;</p>
+<p>&quot;Well, Mr. Holmes, what can it be?&quot;</p>
+<p>&quot;Let us see whether by this purely mental analysis we can get it to a
+finer point.  You have been in this house a year.&quot;</p>
+<p>&quot;Nearly two.&quot;</p>
+<p>&quot;All the better.  During this long period no one wants anything from
+you.  Now suddenly within three or four days you have urgent demands.
+What would you gather from that?&quot;</p>
+<p>&quot;It can only mean,&quot; said I, &quot;that the object, whatever it may be, has
+only just come into the house.&quot;</p>
+<p>&quot;Settled once again,&quot; said Holmes.  &quot;Now, Mrs. Maberley, has any object
+just arrived?&quot;</p>
+<p>&quot;No; I have bought nothing new this year.&quot;</p>
+<p>&quot;Indeed!  That is very remarkable.  Well, I think we had best let
+matters develop a little further until we have clearer data.  Is that
+lawyer of yours a capable man?&quot;</p>
+<p>&quot;Mr. Sutro is most capable.&quot;</p>
+<p>&quot;Have you another maid, or was the fair Susan, who has just banged your
+front door, alone?&quot;</p>
+<p>&quot;I have a young girl.&quot;</p>
+<p>&quot;Try and get Sutro to spend a night or two in the house.  You might
+possibly want protection.&quot;</p>
+<p>&quot;Against whom?&quot;</p>
+<p>&quot;Who knows?  The matter is certainly obscure.  If I can't find what
+they are after, I must approach the matter from the other end, and try
+to get at the principal.  Did this house-agent man give any address?&quot;</p>
+<p>&quot;Simply his card and occupation.  Haines-Johnson, Auctioneer and
+Valuer.&quot;</p>
+<p>&quot;I don't think we shall find him in the Directory.  Honest business men
+don't conceal their place of business.  Well, you will let me know any
+fresh development.  I have taken up your case, and you may rely upon it
+that I shall see it through.&quot;</p>
+<p>As we passed through the hall Holmes's eyes, which missed nothing,
+lighted upon several trunks and cases which were piled in the corner.
+The labels shone out upon them.</p>
+<p>&quot;'Milano.'  'Lucerne.'  These are from Italy.&quot;</p>
+<p>&quot;They are poor Douglas's things.&quot;</p>
+<p>&quot;You have not unpacked them?  How long have you had them?&quot;</p>
+<p>&quot;They arrived last week.&quot;</p>
+<p>&quot;But you said--why, surely this might be the missing link.  How do we
+know that there is not something of value there?&quot;</p>
+<p>&quot;There could not possibly be, Mr. Holmes.  Poor Douglas had only his
+pay and a small annuity.  What could he have of value?&quot;</p>
+<p>Holmes was lost in thought.</p>
+<p>&quot;Delay no longer, Mrs. Maberley,&quot; he said at last.  &quot;Have these things
+taken upstairs to your bedroom.  Examine them as soon as possible and
+see what they contain.  I will come to-morrow and hear your report.&quot;</p>
+<p>It was quite evident that The Three Gables was under very close
+surveillance, for as we came round the high hedge at the end of the
+lane there was the negro prize-fighter standing in the shadow.  We came
+on him quite suddenly, and a grim and menacing figure he looked in that
+lonely place.  Holmes clapped his hand to his pocket.</p>
+<p>&quot;Lookin' for your gun, Masser Holmes?&quot;</p>
+<p>&quot;No; for my scent-bottle, Steve.&quot;</p>
+<p>&quot;You are funny, Masser Holmes, ain't you?&quot;</p>
+<p>&quot;It won't be funny for you, Steve, if I get after you.  I gave you fair
+warning this morning.&quot;</p>
+<p>&quot;Well, Masser Holmes, I done gone think over what you said, and I don't
+want no more talk about that affair of Masser Perkins.  S'pose I can
+help you, Masser Holmes, I will.&quot;</p>
+<p>&quot;Well, then, tell me who is behind you on this job?&quot;</p>
+<p>&quot;So help me the Lord!  Masser Holmes, I told you the truth before.  I
+don't know.  My boss Barney gives me orders and that's all.&quot;</p>
+<p>&quot;Well, just bear in mind, Steve, that the lady in that house, and
+everything under that roof, is under my protection.  Don't you forget
+it.&quot;</p>
+<p>&quot;All right, Masser Holmes.  I'll remember.'</p>
+<p>&quot;I've got him thoroughly frightened for his own skin, Watson,&quot; Holmes
+remarked as we walked on.  &quot;I think he would double-cross his employer
+if he knew who he was.  It was lucky I had some knowledge of the
+Spencer John crowd, and that Steve was one of them.  Now, Watson, this
+is a case for Langdale Pike, and I am going to see him now.  When I get
+back I may be clearer in the matter.&quot;</p>
+<p>I saw no more of Holmes during the day, but I could well imagine how he
+spent it, for Langdale Pike was his human book of reference upon all
+matters of social scandal.  This strange, languid creature spent his
+waking hours in the bow window of a St. James's Street club, and was
+the receiving-station, as well as the transmitter, for all the gossip
+of the Metropolis.  He made, it was said, a four-figure income by the
+paragraphs which he contributed every week to the garbage papers which
+cater for an inquisitive public.  If ever, far down in the turbid
+depths of London life, there was some strange swirl or eddy, it was
+marked with automatic exactness by this human dial upon the surface.
+Holmes discreetly helped Langdale to knowledge, and on occasion was
+helped in turn.</p>
+<p>When I met my friend in his room early next morning, I was conscious
+from his bearing that all was well, but none the less a most unpleasant
+surprise was awaiting us.  It took the shape of the following telegram:</p>
+<p>&quot;Please come out at once.  Client's house burgled in the night.  Police
+in possession.</p>
+<p>&quot;SUTRO.&quot;</p>
+<p>Holmes whistled.  &quot;The drama has come to a crisis, and quicker than I
+had expected.  There is a great driving-power at the back of this
+business, Watson, which does not surprise me after what I have heard.
+This Sutro, of course, is her lawyer.  I made a mistake, I fear, in not
+asking you to spend the night on guard.  This fellow has clearly proved
+a broken reed.  Well, there is nothing for it but another journey to
+Harrow Weald.&quot;</p>
+<p>We found The Three Gables a very different establishment to the orderly
+household of the previous day.  A small group of idlers had assembled
+at the garden gate, while a couple of constables were examining the
+windows and the geranium beds.  Within we met a grey old gentleman, who
+introduced himself as the lawyer, together with a bustling, rubicund
+Inspector, who greeted Holmes as an old friend.</p>
+<p>&quot;Well, Mr. Holmes, no chance for you in this case, I'm afraid.  Just a
+common, ordinary burglary, and well within the capacity of the poor old
+police.  No experts need apply.&quot;</p>
+<p>&quot;I am sure the case is in very good hands,&quot; said Holmes.  &quot;Merely a
+common burglary, you say?&quot;</p>
+<p>&quot;Quite so.  We know pretty well who the men are and where to find them.
+It is that gang of Barney Stockdale, with the big nigger in it--they've
+been seen about here.&quot;</p>
+<p>&quot;Excellent!  What did they get?&quot;</p>
+<p>&quot;Well, they don't seem to have got much.  Mrs. Maberley was
+chloroformed and the house was----  Ah! here is the lady herself.&quot;</p>
+<p>Our friend of yesterday, looking very pale and ill, had entered the
+room, leaning upon a little maid-servant.</p>
+<p>&quot;You gave me good advice, Mr. Holmes,&quot; said she, smiling ruefully.
+&quot;Alas, I did not take it!  I did not wish to trouble Mr. Sutro, and so
+I was unprotected.&quot;</p>
+<p>&quot;I only heard of it this morning,&quot; the lawyer explained.</p>
+<p>&quot;Mr. Holmes advised me to have some friend in the house.  I neglected
+his advice, and I have paid for it.&quot;</p>
+<p>&quot;You look wretchedly ill,&quot; said Holmes.  &quot;Perhaps you are hardly equal
+to telling me what occurred.&quot;</p>
+<p>&quot;It is all here,&quot; said the Inspector, tapping a bulky notebook.</p>
+<p>&quot;Still, if the lady is not too exhausted----&quot;</p>
+<p>&quot;There is really so little to tell.  I have no doubt that wicked Susan
+had planned an entrance for them.  They must have known the house to an
+inch.  I was conscious for a moment of the chloroform rag which was
+thrust over my mouth, but I have no notion how long I may have been
+senseless.  When I woke, one man was at the bedside and another was
+rising with a bundle in his hand from among my son's baggage, which was
+partially opened and littered over the floor.  Before he could get away
+I sprang up and seized him.&quot;</p>
+<p>&quot;You took a big risk,&quot; said the Inspector.</p>
+<p>&quot;I clung to him, but he shook me off, and the other may have struck me,
+for I can remember no more.  Mary the maid heard the noise and began
+screaming out of the window.  That brought the police, but the rascals
+had got away.&quot;</p>
+<p>&quot;What did they take?&quot;</p>
+<p>&quot;Well, I don't think there is anything of value missing.  I am sure
+there was nothing in my son's trunks.&quot;</p>
+<p>&quot;Did the men leave no clue?&quot;</p>
+<p>&quot;There was one sheet of paper which I may have torn from the man that I
+grasped.  It was lying all crumpled on the floor.  It is in my son's
+handwriting.&quot;</p>
+<p>&quot;Which means that it is not of much use,&quot; said the Inspector.  &quot;Now if
+it had been in the burglar's----&quot;</p>
+<p>&quot;Exactly,&quot; said Holmes.  &quot;What rugged common sense!  None the less, I
+should be curious to see it.&quot;</p>
+<p>The Inspector drew a folded sheet of foolscap from his pocket-book.</p>
+<p>&quot;I never pass anything, however trifling,&quot; said he, with some
+pomposity.  &quot;That is my advice to you, Mr. Holmes.  In twenty-five
+years' experience I have learned my lesson.  There is always the chance
+of finger-marks or something.&quot;</p>
+<p>Holmes inspected the sheet of paper.</p>
+<p>&quot;What do you make of it, Inspector?&quot;</p>
+<p>&quot;Seems to be the end of some queer novel, so far as I can see.&quot;</p>
+<p>&quot;It may certainly prove to be the end of a queer tale,&quot; said Holmes.
+&quot;You have noticed the number on the top of the page.  It is two hundred
+and forty-five.  Where are the odd two hundred and forty-four pages?&quot;</p>
+<p>&quot;Well, I suppose the burglars got those.  Much good may it do them!&quot;</p>
+<p>&quot;It seems a queer thing to break into a house in order to steal such
+papers as that.  Does it suggest anything to you, Inspector?&quot;</p>
+<p>&quot;Yes, sir; it suggests that in their hurry the rascals just grabbed at
+what came first to hand.  I wish them joy of what they got.&quot;</p>
+<p>&quot;Why should they go to my son's things?&quot; asked Mrs. Maberley.</p>
+<p>&quot;Well, they found nothing valuable downstairs, so they tried their luck
+upstairs.  That is how I read it.  What do you make of it, Mr. Holmes?&quot;</p>
+<p>&quot;I must think it over, Inspector.  Come to the window, Watson.&quot;  Then,
+as we stood together, he read over the fragment of paper.  It began in
+the middle of a sentence and ran like this:</p>
+<p>&quot;... face bled considerably from the cuts and blows, but it was nothing
+to the bleeding of his heart as he saw that lovely face, the face for
+which he had been prepared to sacrifice his very life, looking out at
+his agony and humiliation.  She smiled--yes, by Heaven! she smiled,
+like the heartless fiend she was, as he looked up at her.  It was at
+that moment that love died and hate was born.  Man must live for
+something.  If it is not for your embrace, my lady, then it shall
+surely be for your undoing and my complete revenge.&quot;</p>
+<p>&quot;Queer grammar!&quot; said Holmes, with a smile, as he handed the paper back
+to the Inspector.  &quot;Did you notice how the 'he' suddenly changed to
+'my.'  The writer was so carried away by his own story that he imagined
+himself at the supreme moment to be the hero.&quot;</p>
+<p>&quot;It seemed mighty poor stuff,&quot; said the Inspector, as he replaced it in
+his book.  &quot;What! are you off, Mr. Holmes?&quot;</p>
+<p>&quot;I don't think there is anything more for me to do now that the case is
+in such capable hands.  By the way, Mrs. Maberley, did you say you
+wished to travel?&quot;</p>
+<p>&quot;It has always been my dream, Mr. Holmes.&quot;</p>
+<p>&quot;Where would you like to go--Cairo, Madeira, the Riviera?&quot;</p>
+<p>&quot;Oh! if I had the money I would go round the world.&quot;</p>
+<p>&quot;Quite so.  Round the world.  Well, good morning.  I may drop you a
+line in the evening.&quot;  As we passed the window I caught a glimpse of
+the Inspector's smile and shake of the head.  &quot;These clever fellows
+have always a touch of madness.&quot;  That was what I read in the
+Inspector's smile.</p>
+<p>&quot;Now, Watson, we are at the last lap of our little journey,&quot; said
+Holmes, when we were back in the roar of Central London once more.  &quot;I
+think we had best clear the matter up at once, and it would be well
+that you should come with me, for it is safer to have a witness when
+you are dealing with such a lady as Isadora Klein.&quot;</p>
+<p>We had taken a cab and were speeding to some address in Grosvenor
+Square.  Holmes had been sunk in thought, but he roused himself
+suddenly.</p>
+<p>&quot;By the way, Watson, I suppose you see it all clearly?&quot;</p>
+<p>&quot;No, I can't say that I do.  I only gather that we are going to see the
+lady who is behind all this mischief.&quot;</p>
+<p>&quot;Exactly!  But does the name Isadora Klein convey nothing to you?  She
+was, of course, the celebrated beauty.  There was never a woman to
+touch her.  She is pure Spanish, the real blood of the masterful
+Conquistadors, and her people have been leaders in Pernambuco for
+generations.  She married the aged German sugar king, Klein, and
+presently found herself the richest as well as the most lovely widow
+upon earth.  Then there was an interval of adventure when she pleased
+her own tastes.  She had several lovers, and Douglas Maberley, one of
+the most striking men in London, was one of them.  It was by all
+accounts more than an adventure with him.  He was not a Society
+butterfly, but a strong, proud man who gave and expected all.  But she
+is the '<em>belle dame sans merci</em>' of fiction.  When her caprice is
+satisfied, the matter is ended, and if the other party in the matter
+can't take her word for it, she knows how to bring it home to him.&quot;</p>
+<p>&quot;Then that was his own story----&quot;</p>
+<p>&quot;Ah! you are piecing it together now.  I hear that she is about to
+marry the young Duke of Lomond, who might almost be her son.  His
+Grace's ma might overlook the age, but a big scandal would be a
+different matter, so it is imperative----  Ah! here we are.&quot;</p>
+<p>It was one of the finest corner-houses of the West End.  A machine-like
+footman took up our cards and returned with word that the lady was not
+at home.  &quot;Then we shall wait until she is,&quot; said Holmes cheerfully.</p>
+<p>The machine broke down.</p>
+<p>&quot;Not at home means not at home to <em>you</em>,&quot; said the footman.</p>
+<p>&quot;Good,&quot; Holmes answered.  &quot;That means that we shall not have to wait.
+Kindly give this note to your mistress.&quot;</p>
+<p>He scribbled three or four words upon a sheet of his notebook, folded
+it, and handed it to the man.</p>
+<p>&quot;What did you say, Holmes?&quot; I asked.</p>
+<p>&quot;I simply wrote 'Shall it be the police, then?' I think that should
+pass us in.&quot;</p>
+<p>It did--with amazing celerity.  A minute later we were in an
+Arabian-nights' drawing-room, vast and wonderful, in a half gloom,
+picked out with an occasional pink electric light.  The lady had come,
+I felt, to that time of life when even the proudest beauty finds the
+half-light more welcome.  She rose from a settee as we entered: tall,
+queenly, a perfect figure, a lovely mask-like face, with two wonderful
+Spanish eyes which looked murder at us both.</p>
+<p>&quot;What is this intrusion--and this insulting message?&quot; she asked,
+holding up the slip of paper.</p>
+<p>&quot;I need not explain, madame.  I have too much respect for your
+intelligence to do so--though I confess that intelligence has been
+surprisingly at fault of late.&quot;</p>
+<p>&quot;How so, sir?&quot;</p>
+<p>&quot;By supposing that your hired bullies could frighten me from my work.
+Surely no man would take up my profession if it were not that danger
+attracts him.  It was you, then, who forced me to examine the case of
+young Maberley.&quot;</p>
+<p>&quot;I have no idea what you are talking about.  What have I to do with
+hired bullies?&quot;</p>
+<p>Holmes turned away wearily.</p>
+<p>&quot;Yes, I have underrated your intelligence.  Well, good afternoon!&quot;</p>
+<p>&quot;Stop!  Where are you going?&quot;</p>
+<p>&quot;To Scotland Yard.&quot;</p>
+<p>We had not got half-way to the door before she had overtaken us and was
+holding his arm.  She had turned in a moment from steel to velvet.</p>
+<p>&quot;Come and sit down, gentlemen.  Let us talk this matter over.  I feel
+that I may be frank with you, Mr. Holmes.  You have the feelings of a
+gentleman.  How quick a woman's instinct is to find it out.  I will
+treat you as a friend.&quot;</p>
+<p>&quot;I cannot promise to reciprocate, madame.  I am not the law, but I
+represent justice so far as my feeble powers go.  I am ready to listen,
+and then I will tell you how I will act.&quot;</p>
+<p>&quot;No doubt it was foolish of me to threaten a brave man like yourself.&quot;</p>
+<p>&quot;What was really foolish, madame, is that you have placed yourself in
+the power of a band of rascals who may blackmail or give you away.&quot;</p>
+<p>&quot;No, no!  I am not so simple.  Since I have promised to be frank, I may
+say that no one, save Barney Stockdale and Susan, his wife, have the
+least idea who their employer is.  As to them, well, it is not the
+first----&quot;  She smiled and nodded, with a charming coquettish intimacy.</p>
+<p>&quot;I see.  You've tested them before.&quot;</p>
+<p>&quot;They are good hounds who run silent.&quot;</p>
+<p>&quot;Such hounds have a way sooner or later of biting the hand that feeds
+them.  They will be arrested for this burglary.  The police are already
+after them.&quot;</p>
+<p>&quot;They will take what comes to them.  That is what they are paid for.  I
+shall not appear in the matter.&quot;</p>
+<p>&quot;Unless I bring you into it.&quot;</p>
+<p>&quot;No, no; you would not.  You are a gentleman.  It is a woman's secret.&quot;</p>
+<p>&quot;In the first place you must give back this manuscript.&quot;</p>
+<p>She broke into a ripple of laughter, and walked to the fireplace.
+There was a calcined mass which she broke up with the poker.  &quot;Shall I
+give this back?&quot; she asked.  So roguish and exquisite did she look as
+she stood before us with a challenging smile that I felt of all
+Holmes's criminals this was the one whom he would find it hardest to
+face.  However, he was immune from sentiment.</p>
+<p>&quot;That seals your fate,&quot; he said coldly.  &quot;You are very prompt in your
+actions, madame, but you have overdone it on this occasion.&quot;</p>
+<p>She threw the poker down with a clatter.</p>
+<p>&quot;How hard you are!&quot; she cried.  &quot;May I tell you the whole story?&quot;</p>
+<p>&quot;I fancy I could tell it to you.&quot;</p>
+<p>&quot;But you must look at it with my eyes, Mr. Holmes.  You must realize it
+from the point of view of a woman who sees all her life's ambition
+about to be ruined at the last moment.  Is such a woman to be blamed if
+she protects herself?&quot;</p>
+<p>&quot;The original sin was yours.&quot;</p>
+<p>&quot;Yes, yes!  I admit it.  He was a dear boy, Douglas, but it so chanced
+that he could not fit into my plans.  He wanted marriage--marriage, Mr.
+Holmes--with a penniless commoner.  Nothing less would serve him.  Then
+he became pertinacious.  Because I had given he seemed to think that I
+still must give, and to him only.  It was intolerable.  At last I had
+to make him realize it.&quot;</p>
+<p>&quot;By hiring ruffians to beat him under your own window.&quot;</p>
+<p>&quot;You do indeed seem to know everything.  Well, it is true.  Barney and
+the boys drove him away, and were, I admit, a little rough in doing so.
+But what did he do then?  Could I have believed that a gentleman would
+do such an act?  He wrote a book in which he described his own story.
+I, of course, was the wolf; he the lamb.  It was all there, under
+different names, of course; but who in all London would have failed to
+recognize it?  What do you say to that, Mr. Holmes?&quot;</p>
+<p>&quot;Well, he was within his rights.&quot;</p>
+<p>&quot;It was as if the air of Italy had got into his blood and brought with
+it the old cruel Italian spirit.  He wrote to me and sent me a copy of
+his book that I might have the torture of anticipation.  There were two
+copies, he said--one for me, one for his publisher.&quot;</p>
+<p>&quot;How did you know the publisher's had not reached him?&quot;</p>
+<p>&quot;I knew who his publisher was.  It is not his only novel, you know.  I
+found out that he had not heard from Italy.  Then came Douglas's sudden
+death.  So long as that other manuscript was in the world there was no
+safety for me.  Of course, it must be among his effects, and these
+would be returned to his mother.  I set the gang at work.  One of them
+got into the house as servant.  I wanted to do the thing honestly.  I
+really and truly did.  I was ready to buy the house and everything in
+it.  I offered any price she cared to ask.  I only tried the other way
+when everything else had failed.  Now, Mr. Holmes, granting that I was
+too hard on Douglas--and, God knows, I am sorry for it!--what else
+could I do with my whole future at stake?&quot;</p>
+<p>Sherlock Holmes shrugged his shoulders.</p>
+<p>&quot;Well, well,&quot; said he, &quot;I suppose I shall have to compound a felony as
+usual.  How much does it cost to go round the world in first-class
+style?&quot;</p>
+<p>The lady stared in amazement.</p>
+<p>&quot;Could it be done on five thousand pounds?&quot;</p>
+<p>&quot;Well, I should think so, indeed!&quot;</p>
+<p>&quot;Very good.  I think you will sign me a cheque for that, and I will see
+that it comes to Mrs. Maberley.  You owe her a little change of air.
+Meantime, lady&quot;--he wagged a cautionary forefinger--&quot;have a care!  Have
+a care!  You can't play with edged tools for ever without cutting those
+dainty hands.&quot;</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="The_Adventure_of_the_Illustrious_Client.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="The_Adventure_of_the_Blanched_Soldier.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="The_Adventure_of_the_Illustrious_Client.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="The_Adventure_of_the_Blanched_Soldier.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        <script type="text/javascript" src="src/theme/theme-solarized_dark.js"></script>
+        <script type="text/javascript" src="src/theme/theme-solarized_light.js"></script>
+    </body>
+</html>
